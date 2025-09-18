@@ -25,10 +25,10 @@ const Navigation = () => {
               Home
             </a>
             <a
-              href="#facilities"
+              href="#ourhome"
               className="text-stone-600 hover:text-emerald-700 hover:underline decoration-yellow-400 transition-colors font-medium"
             >
-              Our Facilities
+              Our Home
             </a>
             <a
               href="#mission-vision"

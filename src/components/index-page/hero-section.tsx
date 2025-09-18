@@ -37,7 +37,7 @@ const HeroSection = () => {
             >
               <a href="#facilities">
                 <button className="bg-emerald-700 hover:bg-emerald-800 text-white px-6 lg:px-8 py-3 lg:py-4 rounded-2xl text-base lg:text-lg font-medium transition-transform hover:scale-105 shadow-lg">
-                  View Our Facilities
+                  View Our Home
                 </button>
               </a>
             </motion.div>

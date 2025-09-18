@@ -59,7 +59,7 @@ export default function OurFacilities() {
     {
       id: 7,
       image: "/image/Img_7.jpg",
-      title: "Family Lounge",
+      title: "Shared Room",
       description:
         "A cozy spot for loved ones to gather, connect, and create cherished memories.",
     },
@@ -88,7 +88,7 @@ export default function OurFacilities() {
 
   return (
     <section
-      id="facilities"
+      id="ourhome"
       className="relative bg-gradient-to-br from-stone-50 via-emerald-50 to-amber-50 py-16 md:py-28 space-y-10"
     >
       <div className="relative max-w-7xl mx-auto space-y-10 px-4 sm:px-6 lg:px-8">
@@ -102,7 +102,7 @@ export default function OurFacilities() {
         >
           <div className="flex items-center justify-center gap-4 mb-6">
             <h2 className="text-4xl md:text-6xl font-bold text-emerald-500">
-              Our Facilities
+              Our Home
             </h2>
           </div>
           <p className="text-xl text-stone-600 max-w-3xl mx-auto leading-relaxed">
