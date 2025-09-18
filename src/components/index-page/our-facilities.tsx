@@ -77,13 +77,7 @@ export default function OurFacilities() {
       description:
         "Peaceful nooks designed for relaxation, reflection, and quality alone time.",
     },
-    {
-      id: 10,
-      image: "/image/Img_9.jpg",
-      title: "Comfortable Living Room",
-      description:
-        "Bright, airy rooms designed for rest and relaxation.",
-    },
+
   ];
 
   return (
@@ -176,12 +170,10 @@ export default function OurFacilities() {
         viewport={{ once: true }}
       >
         <h3 className="text-2xl lg:text-3xl font-bold text-emerald-500 mb-4 lg:mb-6">
-          Experience Our Natural Approach to Care
+        Experience Our Topnotch Approach to Care
         </h3>
         <p className="text-base lg:text-xl text-stone-700 mb-6 lg:mb-8 max-w-3xl mx-auto">
-          We invite you to walk our gardens, feel the warmth of our community,
-          and discover how Rivers Residence creates a sanctuary where care flows
-          as naturally as water over stone.
+        At Rivers Residence, care flows with the ease and continuity of a river. Feel the warmth of our community and discover a sanctuary where every resident is supported with dignity, peace, and purpose.
         </p>
         <a
           target="_blank"
