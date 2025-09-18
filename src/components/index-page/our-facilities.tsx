@@ -45,7 +45,7 @@ export default function OurFacilities() {
     {
       id: 5,
       image: "/image/Img_4.jpg",
-      title: "Entrance Lounge",
+      title: "Living Room",
       description:
         "Designed for fun, games, and social gatherings to keep everyone engaged.",
     },
