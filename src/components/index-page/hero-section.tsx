@@ -1,132 +1,58 @@
-"use client";
+const HeroSection = () => {
+    return (
+      <section
+        id="home"
+        className="pt-8 lg:pt-16 pb-16 lg:pb-24 px-4 sm:px-6 lg:px-8 bg-emerald-50"
+      >
+        <div className="max-w-7xl mx-auto">
+          <div className="grid lg:grid-cols-2 gap-8 lg:gap-16 items-center">
+            {/* Left Section */}
+            <div className="text-center lg:text-left">
+              <h1 className="text-4xl sm:text-5xl lg:text-7xl font-bold text-emerald-900 mb-6 lg:mb-8 leading-tight">
+                Where Care Flows <span className="text-yellow-600">Everything Follows</span>
+              </h1>
 
-import { Button } from "@/components/ui/button";
-import { motion } from "framer-motion";
-import { ArrowRight, Phone } from "lucide-react";
 
-export default function ImprovedHeroSection() {
-  const phone = "616-540-3193"; // Replace with your actual phone constant
 
-  return (
-    <section
-      id="home"
-      className="relative min-h-screen flex items-center overflow-hidden"
-    >
-      <div className="absolute inset-0">
-        <div className="absolute inset-0 bg-[url('/banner/obedi-banner.jpg')] bg-cover bg-center bg-no-repeat scale-105" />
-        <div className="absolute inset-0 bg-gradient-to-br from-black/60 via-black/40 to-black/50" />
-        <div className="absolute inset-0 bg-gradient-to-t from-yellow-900/20 via-transparent to-transparent" />
-      </div>
 
-      {/* Content */}
-      <div className="relative z-20 mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-24 w-full">
-        <div className="grid lg:grid-cols-2 gap-12 items-center">
-          {/* Left Column - Main Content */}
-          <motion.div
-            initial={{ opacity: 0, x: -50 }}
-            animate={{ opacity: 1, x: 0 }}
-            transition={{ duration: 0.8, ease: "easeOut" }}
-            className="space-y-8"
-          >
-            {/* Main Headlines */}
-            <div className="space-y-4">
-              <motion.h1
-                initial={{ opacity: 0, y: 30 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.8, delay: 0.3 }}
-                className="text-5xl font-bold uppercase font-fredoka tracking-widest text-white"
-              >
-                OBEDI HOME
-              </motion.h1>
+              <div className="flex flex-col sm:flex-row gap-4 mb-8 lg:mb-12 justify-center lg:justify-start">
+                <a href="#facilities">
+                <button className="bg-emerald-700 hover:bg-emerald-800 text-white px-6 lg:px-8 py-3 lg:py-4 rounded-2xl text-base lg:text-lg font-medium transition-transform hover:scale-105 shadow-lg">
+                  <span className="hidden sm:inline">
+                   View Our Facilities
+                  </span>
+                  <span className="sm:hidden">View Our Facilities</span>
+                </button>
 
-              <motion.div
-                initial={{ opacity: 0, y: 30 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.8, delay: 0.4 }}
-                className="relative"
-              >
-                <h2 className="relative text-2xl sm:text-4xl font-bold text-amber-200">
-                  A Safe Place for Healing and Growth
-                </h2>
-              </motion.div>
+                </a>
+              </div>
             </div>
 
-            {/* Description */}
-            <motion.p
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.8, delay: 0.5 }}
-              className="text-lg sm:text-xl text-white/90 leading-relaxed max-w-2xl"
-            >
-              Welcome to Obedi Home, an all-male residential facility providing
-              24/7 care for individuals with behavioral health needs. We create
-              a structured, compassionate environment where residents feel safe,
-              respected, and supported in their daily lives.
-            </motion.p>
+            {/* Right Section */}
+            <div className="relative mt-8 lg:mt-0">
+              {/* Solid emerald border frame */}
+              <div className="absolute inset-0 bg-emerald-200 rounded-2xl lg:rounded-3xl transform rotate-2 lg:rotate-3"></div>
 
-            {/* CTA Buttons */}
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.8, delay: 1 }}
-              className="flex flex-wrap gap-4 pt-4"
-            >
-              <motion.div
-                whileHover={{ scale: 1.05 }}
-                whileTap={{ scale: 0.95 }}
-              >
-                <Button
-                  asChild
-                  size="lg"
-                  className="bg-yellow-500 hover:bg-yellow-600 text-yellow-900 font-semibold text-lg px-8 py-4 shadow-xl"
-                >
-                  <a
-                    href={`tel:${phone.replaceAll("-", "")}`}
-                    className="inline-flex items-center gap-2"
-                  >
-                    <Phone className="h-5 w-5" />
-                    Call {phone}
-                  </a>
-                </Button>
-              </motion.div>
+              <div className="relative bg-white rounded-2xl lg:rounded-3xl p-2 lg:p-3 shadow-2xl">
+                <img
+                  src="/banner/rr_banner.jpg"
+                  alt="Rivers Residence - A peaceful care home surrounded by nature"
+                  className="w-full h-full sm:h-80 lg:h-[500px] object-cover rounded-xl lg:rounded-2xl"
+                />
+              </div>
 
-              <motion.div
-                whileHover={{ scale: 1.05 }}
-                whileTap={{ scale: 0.95 }}
-              >
-                <Button asChild variant="secondary" size="lg">
-                  <a href="#about" className="inline-flex items-center gap-2">
-                    Learn More <ArrowRight className="h-5 w-5" />
-                  </a>
-                </Button>
-              </motion.div>
-            </motion.div>
-          </motion.div>
-
-          <motion.div
-            initial={{ opacity: 0, x: 50 }}
-            animate={{ opacity: 1, x: 0 }}
-            transition={{ duration: 0.8, delay: 0.4 }}
-            className="space-y-6 lg:justify-self-end"
-          ></motion.div>
+              {/* Callout Tag */}
+              <div className="absolute -bottom-4 -left-4 lg:-bottom-6 lg:-left-6 bg-emerald-700 text-white p-4 lg:p-6 rounded-xl lg:rounded-2xl shadow-xl">
+                <div className="text-lg lg:text-2xl font-bold">A Home</div>
+                <div className="text-emerald-100 text-sm lg:text-base">
+                  Not Just Care
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
-      </div>
+      </section>
+    );
+  };
 
-      <motion.div
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 1 }}
-        transition={{ duration: 0.8, delay: 1.5 }}
-        className="absolute bottom-8 left-1/2 transform -translate-x-1/2"
-      >
-        <motion.div
-          animate={{ y: [0, 10, 0] }}
-          transition={{ duration: 2, repeat: Infinity }}
-          className="text-white/60 text-center"
-        >
-          <ArrowRight className="h-6 w-6 mx-auto rotate-90" />
-          <div className="text-sm mt-2">Scroll to explore</div>
-        </motion.div>
-      </motion.div>
-    </section>
-  );
-}
+  export default HeroSection;

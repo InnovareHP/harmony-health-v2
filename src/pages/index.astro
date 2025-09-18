@@ -1,48 +1,40 @@
 ---
+// Import styles and components
 import '../styles/global.css';
-// Component Imports
-
-import ObediHomeIndex from '../index-page/index-page';
-
-// Full Astro Component Syntax:
-// https://docs.astro.build/basics/astro-components/
-
+import RiversResidenceIndex from '../index-page/index-page';
 ---
-
 <html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1" />
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-		<!-- Title & Description -->
-		<title>OBEDI HOME | Compassionate Behavioral Health Living</title>
-		<meta name="description" content="OBEDI HOME provides a safe and supportive environment for male residents with behavioral health needs, offering privacy, personalized care, and community integration." />
+    <!-- Title & Description -->
+    <title>Rivers Residence | Where Everything Flows, Healing Follows</title>
+    <meta name="description" content="Rivers Residence offers compassionate and dignified housing for individuals with behavioral health needs. Experience a safe, structured, and supportive living environment." />
 
-		<!-- Favicon -->
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap" rel="stylesheet">
 
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<link href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap" rel="stylesheet">
+    <!-- Open Graph for Social Sharing -->
+    <meta property="og:title" content="Rivers Residence" />
+    <meta property="og:description" content="Compassionate housing for behavioral health — dignity, healing, and support." />
+    <meta property="og:image" content="/image/rivers-residence-meta.jpeg" />
+    <meta property="og:url" content="https://riversresidence.com" />
+    <meta property="og:type" content="website" />
 
-		<!-- Open Graph for Social Sharing -->
-		<meta property="og:title" content="OBEDI HOME" />
-		<meta property="og:description" content="Supportive behavioral health living for men — privacy, care, dignity, and healing." />
-		<meta property="og:image" content="/image/obedi-metadata.jpeg" />
-		<meta property="og:url" content="https://obedihome.com" />
-		<meta property="og:type" content="website" />
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Rivers Residence" />
+    <meta name="twitter:description" content="Compassionate housing for behavioral health — dignity, healing, and support." />
+    <meta name="twitter:image" content="/image/rivers-residence-meta.jpeg" />
 
-		<!-- Twitter Card -->
-		<meta name="twitter:card" content="summary_large_image" />
-		<meta name="twitter:title" content="OBEDI HOME" />
-		<meta name="twitter:description" content="Supportive behavioral health living for men — privacy, care, dignity, and healing." />
-		<meta name="twitter:image" content="/image/obedi-metadata.jpeg" />
+    <!-- Author and Generator -->
+    <meta name="author" content="Rivers Residence" />
+    <meta name="generator" content="Astro" />
+  </head>
 
-		<!-- Author and Generator -->
-		<meta name="author" content="OBEDI HOME" />
-		<meta name="generator" content="Astro" />
-	  </head>
-
-
-	<body>
-		<ObediHomeIndex client:load />
-	</body>
+  <body>
+    <RiversResidenceIndex client:load />
+  </body>
 </html>

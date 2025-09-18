@@ -1,35 +1,24 @@
-import { email, phone } from "@/src/lib/constant";
-import { Mail, Phone } from "lucide-react";
+export default function Footer() {
+    return (
+      <footer className="bg-gradient-to-r from-emerald-700 to-emerald-600 text-white">
+        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-8 flex flex-col items-center justify-center text-center space-y-4">
 
-export default function footer() {
-  return (
-    <footer className="border-t border-yellow-200 bg-gradient-to-r from-yellow-600 to-amber-600">
-      <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-sm text-yellow-100">
-        <div className="flex items-center gap-2">
+          {/* Logo */}
           <img
-            src="/icon/obedi-icon.png"
-            alt="Obedi Home"
-            className="h-12 w-auto"
+            src="/icon/RR_LOGO.jpg"
+            alt="Rivers Residence Logo"
+            className="h-14 w-auto rounded-md shadow-md"
           />
-          <span>
-            © {new Date().getFullYear()} Obedi Home. All rights reserved.
-          </span>
+
+          {/* Text */}
+          <p className="text-sm">
+            © {new Date().getFullYear()}{" "}
+            <span className="text-yellow-300 font-semibold">Rivers Residence</span>.
+            All rights reserved.
+          </p>
+
+
         </div>
-        <div className="flex items-center gap-4">
-          <a
-            href={`tel:${phone.replaceAll("-", "")}`}
-            className="inline-flex items-center gap-1 hover:text-yellow-200 transition-colors"
-          >
-            <Phone className="h-4 w-4" /> Call
-          </a>
-          <a
-            href={`mailto:${email}`}
-            className="inline-flex items-center gap-1 hover:text-yellow-200 transition-colors"
-          >
-            <Mail className="h-4 w-4" /> Email
-          </a>
-        </div>
-      </div>
-    </footer>
-  );
-}
+      </footer>
+    );
+  }
