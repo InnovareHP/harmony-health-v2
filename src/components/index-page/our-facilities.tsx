@@ -24,61 +24,68 @@ export default function OurFacilities() {
     {
       id: 2,
       image: "/image/Img_2.jpg",
-      title: "Modern Kitchen & Dining",
+      title: "Modern Kitchen",
       description:
-        "A blend of functionality and style, serving homely, nutritious meals daily.",
+        "A blend of functionality and style, serving homely, nutritious meals daily",
     },
     {
       id: 3,
+      image: "/image/Img_11.jpg",
+      title: "Dining Room",
+      description:
+      "A welcoming space where residents gather to enjoy nutritious meals, share stories, and build a sense of community.",
+    },
+    {
+      id: 4,
       image: "/image/Img_3.jpg",
-      title: "Serene Outdoor Garden",
+      title: "Welcoming Outdoor Space",
       description:
         "Lush green surroundings that create a peaceful escape within your home.",
     },
     {
-      id: 4,
+      id: 5,
       image: "/image/Img_4.jpg",
-      title: "Recreation & Activity Room",
+      title: "Entrance Lounge",
       description:
         "Designed for fun, games, and social gatherings to keep everyone engaged.",
     },
     {
-      id: 5,
-      image: "/image/Img_5.jpg",
-      title: "Private Care Suite",
-      description:
-        "Comfortable, home-style rooms with easy access to personalized care when needed.",
-    },
-    {
       id: 6,
-      image: "/image/Img_6.jpg",
-      title: "Quality Healthcare",
+      image: "/image/Img_5.jpg",
+      title: "Private Room",
       description:
-        "Quality healthcare services to ensure the best possible care for our residents.",
+        "Comfortable rooms with easy access to personalized care when needed.",
     },
     {
       id: 7,
-      image: "/image/Img_7.jpg",
-      title: "Shared Room",
+      image: "/image/Img_6.jpg",
+      title: "Lush Backyard",
       description:
-        "A cozy spot for loved ones to gather, connect, and create cherished memories.",
+        "A space filled with greenery and fresh air, perfect for relaxation, activities, and quiet reflection.",
     },
     {
       id: 8,
+      image: "/image/Img_7.jpg",
+      title: "Shared Room",
+      description:
+        "Cozy space for two, combining comfort, companionship, and affordability.",
+    },
+    {
+      id: 9,
       image: "/image/Img_8.jpg",
       title: "Reading & Quiet Corners",
       description:
         "Peaceful nooks designed for relaxation, reflection, and quality alone time.",
     },
     {
-      id: 9,
+      id: 10,
       image: "/image/Img_9.jpg",
       title: "Comfortable Living Room",
       description:
-        "A cozy space for relaxation, entertainment, and family time.",
+        "Bright, airy rooms designed for rest and relaxation.",
     },
     {
-      id: 10,
+      id: 11,
       image: "/image/Img_10.jpg",
       title: "Peaceful Environment",
       description:

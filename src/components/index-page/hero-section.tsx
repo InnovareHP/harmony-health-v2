@@ -75,18 +75,7 @@ const HeroSection = () => {
             </motion.div>
 
             {/* Callout Tag */}
-            <motion.div
-              className="absolute -bottom-4 -left-4 lg:-bottom-6 lg:-left-6 bg-emerald-700 text-white p-4 lg:p-6 rounded-xl lg:rounded-2xl shadow-xl"
-              initial={{ opacity: 0, scale: 0.8, rotate: -10 }}
-              whileInView={{ opacity: 1, scale: 1, rotate: 0 }}
-              transition={{ delay: 0.4, duration: 0.7, type: "spring" }}
-              viewport={{ once: true }}
-            >
-              <div className="text-lg lg:text-2xl font-bold">A Home</div>
-              <div className="text-emerald-100 text-sm lg:text-base">
-                Not Just Care
-              </div>
-            </motion.div>
+
           </motion.div>
         </div>
       </div>
