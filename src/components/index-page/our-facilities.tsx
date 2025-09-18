@@ -65,7 +65,7 @@ export default function OurFacilities() {
     },
     {
       id: 8,
-      image: "/image/Img_7.jpg",
+      image: "/image/Img_10.jpg",
       title: "Shared Room",
       description:
         "Cozy space for two, combining comfort, companionship, and affordability.",
@@ -83,13 +83,6 @@ export default function OurFacilities() {
       title: "Comfortable Living Room",
       description:
         "Bright, airy rooms designed for rest and relaxation.",
-    },
-    {
-      id: 11,
-      image: "/image/Img_10.jpg",
-      title: "Peaceful Environment",
-      description:
-        "An inviting environment that instantly feels like stepping into a warm home.",
     },
   ];
 
