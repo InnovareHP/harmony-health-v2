@@ -1,13 +1,13 @@
 import { Card } from "@/components/ui/card";
 
 const categories = [
-  { name: "basement", image: "/gallery/basement/basement_1.jpg" },
-  { name: "room-bathroom", image: "/gallery/room-bathroom/room-bathroom_1.jpg" },
-  { name: "dining-room", image: "/gallery/dining-room/dining-room_1.jpg" },
-  { name: "entrance", image: "/gallery/entrance/entrance_1.jpg" },
-  { name: "front-yard", image: "/gallery/front-yard/front-yard_1.jpg" },
-  { name: "kitchen", image: "/gallery/kitchen/kitchen_1.jpg" },
-  { name: "screened-in-porch", image: "/gallery/screened-in-porch/screen_1.jpg" },
+  { name: "basement", title: "Basement"         , image: "/gallery/basement/basement_1.jpg" },
+  { name: "room-bathroom", title: "Room & Bathroom", image: "/gallery/room-bathroom/room-bathroom_1.jpg" },
+  { name: "dining-room", title: "Dining Room", image: "/gallery/dining-room/dining-room_1.jpg" },
+  { name: "entrance", title: "Entrance", image: "/gallery/entrance/entrance_1.jpg" },
+  { name: "front-yard", title: "Front Yard", image: "/gallery/front-yard/front-yard_1.jpg" },
+  { name: "kitchen", title: "Kitchen", image: "/gallery/kitchen/kitchen_1.jpg" },
+  { name: "screened-in-porch", title: "Screened In Porch", image: "/gallery/screened-in-porch/screen_1.jpg" },
 ];
 
 export default function Gallery() {
@@ -36,7 +36,7 @@ export default function Gallery() {
                   {/* Glassmorphism overlay */}
                   <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/30 to-transparent opacity-80 group-hover:opacity-90 transition-opacity duration-500 rounded-2xl flex items-end">
                     <h3 className="w-full text-center text-white text-2xl font-bold capitalize py-4 backdrop-blur-sm">
-                      {cat.name.replace("-", " ")}
+                      {cat.title}
                     </h3>
                   </div>
                 </div>
