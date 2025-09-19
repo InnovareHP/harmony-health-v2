@@ -2,6 +2,7 @@
 
 import ContactSection from "../components/index-page/contact-us";
 import Footer from "../components/index-page/footer";
+import Gallery from "../components/index-page/gallery";
 import Header from "../components/index-page/header";
 import HeroSection from "../components/index-page/hero-section";
 import MissionVision from "../components/index-page/mission-vision";
@@ -13,6 +14,7 @@ export default function RiversResidenceIndex() {
       <Header />
       <HeroSection />
       <OurFacilities />
+      <Gallery />
       <MissionVision />
       <ContactSection />
       <Footer />
