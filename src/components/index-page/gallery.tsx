@@ -15,7 +15,7 @@ export default function Gallery() {
     <section className="py-20 bg-gradient-to-br from-emerald-50 via-amber-50 to-yellow-50">
       <div className="max-w-7xl mx-auto px-6">
         <h2 className="text-5xl font-extrabold text-center mb-14">
-          <span className="bg-gradient-to-r from-emerald-600 via-amber-500 to-yellow-500 bg-clip-tex]t text-transparent">
+          <span className="text-emerald-500">
             Gallery
           </span>
         </h2>
