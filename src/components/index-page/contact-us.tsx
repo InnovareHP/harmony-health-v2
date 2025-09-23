@@ -42,6 +42,16 @@ export default function ContactSection() {
               </div>
 
               <div className="flex items-start gap-4 bg-white/70 p-4 rounded-xl shadow-sm border border-emerald-100">
+                <Phone className="h-6 w-6 text-yellow-600 mt-1 shrink-0" />
+                <p>
+                  <span className="font-semibold text-emerald-900">
+                    Phone:
+                  </span>{" "}
+                  (312) 350-4801
+                </p>
+              </div>
+
+              <div className="flex items-start gap-4 bg-white/70 p-4 rounded-xl shadow-sm border border-emerald-100">
                 <Mail className="h-6 w-6 text-yellow-600 mt-1 shrink-0" />
                 <p>
                   <span className="font-semibold text-emerald-900">

@@ -1,12 +1,13 @@
 ---
 import CategoryGallery from "../../components/category-gallery/category-gallery";
 
+
 export async function getStaticPaths() {
   return [
     { params: { category: "basement" } },
     { params: { category: "dining-room" } },
     { params: { category: "entrance" } },
-    { params: { category: "front-yard" } },
+    { params: { category: "facade" } },
     { params: { category: "kitchen" } },
     { params: { category: "screened-in-porch" } },
     { params: { category: "room-bathroom" } }, // ✅ fixed

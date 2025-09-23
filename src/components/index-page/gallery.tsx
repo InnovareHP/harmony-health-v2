@@ -1,11 +1,10 @@
 import { Card } from "@/components/ui/card";
 
 const categories = [
-  { name: "basement", title: "Basement"         , image: "/gallery/basement/basement_1.jpg" },
+  { name: "basement", title: "Finished Basement"         , image: "/gallery/basement/basement_1.jpg" },
   { name: "room-bathroom", title: "Private/Shared Rooms", image: "/gallery/room-bathroom/room-bathroom_1.jpg" },
   { name: "dining-room", title: "Dining Room", image: "/gallery/dining-room/dining-room_1.jpg" },
-  { name: "entrance", title: "Entrance", image: "/gallery/entrance/entrance_1.jpg" },
-  { name: "front-yard", title: "Front Yard", image: "/gallery/front-yard/front-yard_1.jpg" },
+  { name: "facade", title: "Facade", image: "/gallery/front-yard/front-yard_1.jpg" },
   { name: "kitchen", title: "Kitchen", image: "/gallery/kitchen/kitchen_1.jpg" },
   { name: "screened-in-porch", title: "Screened-in Porch ", image: "/gallery/screened-in-porch/screen_1.jpg" },
 ];
