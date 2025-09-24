@@ -19,7 +19,7 @@ const Navigation = () => {
           {/* Desktop Navigation */}
           <div className="hidden md:flex space-x-6 lg:space-x-8">
             <a
-              href="#home"
+              href="/"
               className="text-stone-600 hover:text-emerald-700 hover:underline decoration-yellow-400 transition-colors font-medium"
             >
               Home
@@ -42,11 +42,17 @@ const Navigation = () => {
             >
               Contact
             </a>
+            <a
+              href="/volunteer"
+              className="text-stone-600 hover:text-emerald-700 hover:underline decoration-yellow-400 transition-colors font-medium"
+            >
+              Volunteer
+            </a>
           </div>
 
           {/* Mobile Menu Button */}
           <button
-            className="md:hidden p-2 rounded-md hover:bg-yellow-100 transition"
+            className="md:hidden p-2 rounded-md hover:bg-yellow-100 transition z-50"
             onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
           >
             {mobileMenuOpen ? (
@@ -59,10 +65,10 @@ const Navigation = () => {
 
         {/* Mobile Navigation */}
         {mobileMenuOpen && (
-          <div className="md:hidden border-t border-emerald-100 py-4 bg-gradient-to-b from-white via-yellow-50 to-emerald-50">
+          <div className="md:hidden border-t border-emerald-100 py-4 bg-gradient-to-b from-white via-yellow-50 to-emerald-50 z-50">
             <div className="flex flex-col space-y-4">
               <a
-                href="#home"
+                href="/"
                 className="text-stone-600 hover:text-yellow-600 font-medium px-4 py-2 transition"
                 onClick={() => setMobileMenuOpen(false)}
               >
@@ -88,6 +94,13 @@ const Navigation = () => {
                 onClick={() => setMobileMenuOpen(false)}
               >
                 Contact
+              </a>
+              <a
+                href="/volunteer"
+                className="text-stone-600 hover:text-yellow-600 font-medium px-4 py-2 transition"
+                onClick={() => setMobileMenuOpen(false)}
+              >
+                Volunteer
               </a>
             </div>
           </div>
