@@ -1,0 +1,24 @@
+---
+// File: src/pages/guides/[guide].astro
+
+import Main from "../../layouts/Main.astro"; // make sure this exists and is imported
+import PatientVisitor from "../../layouts/patient-visitor-guide.astro";
+import Guides from "../../index-page/patient-visitor-guide/guides"; // adjust to actual path
+
+export async function getStaticPaths() {
+  return [
+    { params: { guide: "preparing-your-stay" } },
+    { params: { guide: "during-your-stay" } },
+    { params: { guide: "visitation" } },
+    { params: { guide: "discharge-follow-up" } },
+  ];
+}
+
+const { guide } = Astro.params;
+---
+
+<Main>
+  <PatientVisitor>
+    <Guides guide={guide} client:load />
+  </PatientVisitor>
+</Main>

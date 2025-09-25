@@ -1,0 +1,154 @@
+import {
+  Facebook,
+  Instagram,
+  Linkedin,
+  Mail,
+  MapPin,
+  Phone,
+} from "lucide-react";
+
+const resources = [
+  { label: "HIPAA Privacy Practices", href: "/compliance" },
+  { label: "Price Transparency", href: "/compliance" },
+  { label: "No Surprises Act", href: "/compliance" },
+];
+
+const policies = [
+  { label: "Privacy Policy", href: "/compliance" },
+  { label: "Terms of Use", href: "/compliance" },
+  { label: "Notice of Nondiscrimination", href: "/compliance" },
+  { label: "Accessibility Statement", href: "/compliance" },
+];
+
+export default function Footer() {
+  return (
+    <footer className="border-t bg-white text-neutral-700 dark:bg-neutral-950 dark:text-neutral-300">
+      {/* Top border accent */}
+      <div className="h-1 w-full bg-gradient-to-r from-primary/20 via-primary/60 to-primary/20" />
+
+      <div className="mx-auto grid max-w-7xl gap-10 px-6 py-12 sm:grid-cols-2 lg:grid-cols-3">
+        {/* Brand + Address */}
+        <div itemScope itemType="https://schema.org/Organization">
+          <a href="/" className="inline-flex items-center gap-2">
+            <img
+              src="/images/harmony-health-logo.png"
+              alt="Harmony Health"
+              className="w-40 h-20"
+            />
+          </a>
+
+          <p className="mt-3 text-sm text-neutral-500 dark:text-neutral-400">
+            Compassionate behavioral health services for seniors and families.
+          </p>
+
+          <address
+            itemProp="address"
+            itemScope
+            itemType="https://schema.org/PostalAddress"
+            className="not-italic mt-5 space-y-2 text-sm"
+          >
+            <div className="flex items-start gap-2">
+              <MapPin className="mt-0.5 h-4 w-4" aria-hidden="true" />
+              <span>7001 Bryant Irvin Rd Fort Worth, TX 76132</span>
+            </div>
+            <div className="flex items-center gap-2">
+              <Phone className="h-4 w-4" aria-hidden="true" />
+              <a href="tel:+1XXXXXXXXXX" className="hover:text-primary">
+                888-391-0229
+              </a>
+            </div>
+            <div className="flex items-center gap-2">
+              <Phone className="h-4 w-4" aria-hidden="true" />
+              <span>Fax: 412-706-9202</span>
+            </div>
+            <div className="flex items-center gap-2">
+              <Mail className="h-4 w-4" aria-hidden="true" />
+              <a
+                href="mailto:info@harmonyhealth.org"
+                className="hover:text-primary"
+              >
+                info@harmonyhealth.org
+              </a>
+            </div>
+          </address>
+
+          {/* Social */}
+          <div className="mt-5 flex gap-3">
+            <a
+              href="#"
+              aria-label="Facebook"
+              className="rounded-full border px-3 py-2 hover:border-primary hover:text-primary"
+            >
+              <Facebook className="h-4 w-4" />
+            </a>
+            <a
+              href="#"
+              aria-label="Instagram"
+              className="rounded-full border px-3 py-2 hover:border-primary hover:text-primary"
+            >
+              <Instagram className="h-4 w-4" />
+            </a>
+            <a
+              href="#"
+              aria-label="LinkedIn"
+              className="rounded-full border px-3 py-2 hover:border-primary hover:text-primary"
+            >
+              <Linkedin className="h-4 w-4" />
+            </a>
+          </div>
+        </div>
+
+        {/* Resources */}
+        <nav aria-labelledby="footer-resources">
+          <h3
+            id="footer-resources"
+            className="mb-3 text-sm font-semibold text-neutral-900 dark:text-neutral-100"
+          >
+            Patient Resources
+          </h3>
+          <ul className="space-y-2">
+            {resources.map((l) => (
+              <li key={l.label}>
+                <a
+                  href={l.href}
+                  className="inline-flex items-center hover:text-primary"
+                >
+                  {l.label}
+                </a>
+              </li>
+            ))}
+          </ul>
+        </nav>
+
+        {/* Policies */}
+        <nav aria-labelledby="footer-policies">
+          <h3
+            id="footer-policies"
+            className="mb-3 text-sm font-semibold text-neutral-900 dark:text-neutral-100"
+          >
+            Policies & Notices
+          </h3>
+          <ul className="space-y-2">
+            {policies.map((l) => (
+              <li key={l.label}>
+                <a
+                  href={l.href}
+                  className="inline-flex items-center hover:text-primary"
+                >
+                  {l.label}
+                </a>
+              </li>
+            ))}
+          </ul>
+        </nav>
+
+        {/* Newsletter */}
+      </div>
+
+      {/* Bottom bar */}
+      <div className="border-t bg-neutral-50 px-6 py-5 text-center text-xs text-neutral-500 dark:border-neutral-800 dark:bg-neutral-900">
+        <p>© {new Date().getFullYear()} Harmony Health. All rights reserved.</p>
+      </div>
+    </footer>
+  );
+}

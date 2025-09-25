@@ -1,0 +1,22 @@
+---
+
+import Main from "../../layouts/Main.astro"; // make sure this exists and is imported
+import TreatmentPrograms from "../../layouts/treatment-programs.astro";
+import Programs from "../../index-page/treatment-programs/programs"; // adjust to actual path
+
+export async function getStaticPaths() {
+  return [
+    { params: { program: "inpatient-program" } },
+    { params: { program: "outpatient-program" } },
+    { params: { program: "interdisciplinary-team" } },
+  ];
+}
+
+const { program } = Astro.params;
+---
+
+<Main>
+  <TreatmentPrograms>
+    <Programs program={program} client:load />
+  </TreatmentPrograms>
+</Main>
