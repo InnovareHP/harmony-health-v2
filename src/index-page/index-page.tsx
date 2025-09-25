@@ -9,7 +9,7 @@ import {
 } from "lucide-react";
 
 // Crisis Banner Component
-function CrisisBanner() {
+export function CrisisBanner() {
   return (
     <Alert className="rounded-none border-none bg-destructive/10 border-l-4 border-l-destructive">
       <AlertDescription className="text-destructive font-medium flex items-center justify-center w-full gap-2">
@@ -55,7 +55,10 @@ function HeroSection() {
             >
               Make a Referral
             </a>
-            <a className="border-2 border-gray-300 hover:border-primary hover:text-primary px-8 py-4 rounded-lg text-white font-semibold transition-all duration-200 group">
+            <a
+              href="/treatment-programs"
+              className="border-2 border-gray-300 hover:border-primary hover:text-primary px-8 py-4 rounded-lg text-white font-semibold transition-all duration-200 group"
+            >
               Learn About Our Programs
               <ChevronRight className="inline ml-2 w-4 h-4 group-hover:translate-x-1 transition-transform" />
             </a>
@@ -124,9 +127,12 @@ function ProgramsPreview() {
         </div>
 
         <div className="text-center mt-16">
-          <button className="bg-primary hover:bg-primary/90 text-primary-foreground px-8 py-4 rounded-lg font-semibold transition-all duration-200 shadow-lg hover:shadow-xl">
+          <a
+            href="/treatment-programs"
+            className="bg-primary hover:bg-primary/90 text-primary-foreground px-8 py-4 rounded-lg font-semibold transition-all duration-200 shadow-lg hover:shadow-xl"
+          >
             Explore Our Services
-          </button>
+          </a>
         </div>
       </div>
     </section>
@@ -149,10 +155,13 @@ function AboutCareSection() {
               families to ensure that every patient has the best chance to heal,
               recover, and return to the highest quality of life possible.
             </p>
-            <button className="bg-primary hover:bg-primary/90 text-primary-foreground px-8 py-4 rounded-lg font-semibold transition-all duration-200 shadow-lg hover:shadow-xl group">
+            <a
+              href="/about-us"
+              className="bg-primary hover:bg-primary/90 text-primary-foreground px-8 py-4 rounded-lg font-semibold transition-all duration-200 shadow-lg hover:shadow-xl group"
+            >
               Meet Our Care Team
               <ChevronRight className="inline ml-2 w-4 h-4 group-hover:translate-x-1 transition-transform" />
-            </button>
+            </a>
           </div>
           <div className="relative">
             <div className="absolute inset-0 bg-gradient-to-br from-gray-100 to-gray-50 rounded-3xl transform rotate-3"></div>
@@ -221,9 +230,12 @@ function ProviderStrip() {
           managers to ensure safe, seamless transitions of care. Our admissions
           team is available 24/7.
         </p>
-        <button className="bg-white hover:bg-gray-100 text-primary px-8 py-4 rounded-lg font-semibold transition-all duration-200 shadow-lg hover:shadow-xl">
+        <a
+          href="/referrals"
+          className="bg-white hover:bg-gray-100 text-primary px-8 py-4 rounded-lg font-semibold transition-all duration-200 shadow-lg hover:shadow-xl"
+        >
           Refer a Patient
-        </button>
+        </a>
       </div>
     </section>
   );
@@ -385,7 +397,6 @@ function ResourcesSection() {
 export default function IndexPage() {
   return (
     <div className="min-h-screen bg-white">
-      <CrisisBanner />
       <HeroSection />
       <ProgramsPreview />
       <AboutCareSection />
