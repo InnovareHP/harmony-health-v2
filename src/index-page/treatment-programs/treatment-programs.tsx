@@ -8,7 +8,7 @@ export default function TreatmentPrograms() {
     },
     {
       title: "Outpatient Programs (PHP/IOP)",
-      href: "/treatment-programs/outpatient-programs",
+      href: "/treatment-programs/outpatient-program",
       description:
         "Structured therapy for adults and seniors needing support but not full hospitalization. Reduces isolation, maintains independence, and prevents hospital readmission.",
     },

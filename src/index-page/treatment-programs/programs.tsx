@@ -11,7 +11,7 @@ const Programs = ({ program }: Props) => {
     return <InpatientPrograms />;
   }
 
-  if (program === "outpatient-programs") {
+  if (program === "outpatient-program") {
     return <OutpatientPrograms />;
   }
 

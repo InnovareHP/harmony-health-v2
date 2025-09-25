@@ -12,7 +12,7 @@ import {
 export function CrisisBanner() {
   return (
     <Alert className="rounded-none border-none bg-destructive/10 border-l-4 border-l-destructive">
-      <AlertDescription className="text-destructive font-medium flex items-center justify-center w-full gap-2">
+      <AlertDescription className="text-destructive font-medium flex sm:flex-row flex-col items-center justify-center w-full gap-2">
         <AlertTriangle className="h-4 w-4 text-destructive" />
         If you or a loved one is in immediate crisis, dial 911 or call the{" "}
         <strong>988 Suicide & Crisis Lifeline</strong>
