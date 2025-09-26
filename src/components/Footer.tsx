@@ -22,7 +22,7 @@ const policies = [
 
 export default function Footer() {
   return (
-    <footer className="border-t bg-white text-neutral-700 dark:bg-neutral-950 dark:text-neutral-300">
+    <footer className="border-t bg-[#212121] text-neutral-700 dark:bg-neutral-950 dark:text-neutral-300">
       {/* Top border accent */}
       <div className="h-1 w-full bg-gradient-to-r from-primary/20 via-primary/60 to-primary/20" />
 
@@ -45,7 +45,7 @@ export default function Footer() {
             itemProp="address"
             itemScope
             itemType="https://schema.org/PostalAddress"
-            className="not-italic mt-5 space-y-2 text-sm"
+            className="not-italic mt-5 space-y-2 text-sm text-primary-foreground"
           >
             <div className="flex items-start gap-2">
               <MapPin className="mt-0.5 h-4 w-4" aria-hidden="true" />
@@ -77,21 +77,21 @@ export default function Footer() {
             <a
               href="#"
               aria-label="Facebook"
-              className="rounded-full border px-3 py-2 hover:border-primary hover:text-primary"
+              className="rounded-full border px-3 py-2 hover:border-primary hover:text-primary text-primary-foreground"
             >
               <Facebook className="h-4 w-4" />
             </a>
             <a
               href="#"
               aria-label="Instagram"
-              className="rounded-full border px-3 py-2 hover:border-primary hover:text-primary"
+              className="rounded-full border px-3 py-2 hover:border-primary hover:text-primary text-primary-foreground"
             >
               <Instagram className="h-4 w-4" />
             </a>
             <a
               href="#"
               aria-label="LinkedIn"
-              className="rounded-full border px-3 py-2 hover:border-primary hover:text-primary"
+              className="rounded-full border px-3 py-2 hover:border-primary hover:text-primary text-primary-foreground"
             >
               <Linkedin className="h-4 w-4" />
             </a>
@@ -102,7 +102,7 @@ export default function Footer() {
         <nav aria-labelledby="footer-resources">
           <h3
             id="footer-resources"
-            className="mb-3 text-sm font-semibold text-neutral-900 dark:text-neutral-100"
+            className="mb-3 text-sm font-semibold text-primary-foreground dark:text-neutral-100"
           >
             Patient Resources
           </h3>
@@ -111,7 +111,7 @@ export default function Footer() {
               <li key={l.label}>
                 <a
                   href={l.href}
-                  className="inline-flex items-center hover:text-primary"
+                  className="inline-flex items-center  hover:text-primary text-primary-foreground"
                 >
                   {l.label}
                 </a>
@@ -124,7 +124,7 @@ export default function Footer() {
         <nav aria-labelledby="footer-policies">
           <h3
             id="footer-policies"
-            className="mb-3 text-sm font-semibold text-neutral-900 dark:text-neutral-100"
+            className="mb-3 text-sm font-semibold text-primary-foreground dark:text-neutral-100"
           >
             Policies & Notices
           </h3>
@@ -133,7 +133,7 @@ export default function Footer() {
               <li key={l.label}>
                 <a
                   href={l.href}
-                  className="inline-flex items-center hover:text-primary"
+                  className="inline-flex items-center text-primary-foreground/80 hover:text-primary"
                 >
                   {l.label}
                 </a>
@@ -146,7 +146,7 @@ export default function Footer() {
       </div>
 
       {/* Bottom bar */}
-      <div className="border-t bg-neutral-50 px-6 py-5 text-center text-xs text-neutral-500 dark:border-neutral-800 dark:bg-neutral-900">
+      <div className="border-t bg-[#212121] px-6 py-5 text-center text-xs text-neutral-500 dark:border-neutral-800 dark:bg-neutral-900">
         <p>© {new Date().getFullYear()} Harmony Health. All rights reserved.</p>
       </div>
     </footer>

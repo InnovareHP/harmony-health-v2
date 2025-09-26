@@ -14,7 +14,9 @@ const OurFocus = () => {
       <section className="max-w-7xl mx-auto px-6 py-12 grid lg:grid-cols-[1.6fr_1fr] gap-12">
         {/* LEFT: Main Content */}
         <div>
-          <h1 className="text-3xl font-bold text-green-700 mb-4">Our Focus</h1>
+          <h1 className="text-3xl font-bold text-primary-foreground mb-4">
+            Our Focus
+          </h1>
 
           <p className="text-gray-800 mb-4">
             Harmony Health is committed to providing quality, patient-focused

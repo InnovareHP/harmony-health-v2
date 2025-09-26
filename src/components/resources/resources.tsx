@@ -35,7 +35,9 @@ const Resources = () => {
     <div>
       {/* Content */}
       <main className="max-w-5xl mx-auto px-6 py-12">
-        <h1 className="text-3xl font-bold text-green-700 mb-6">Resources</h1>
+        <h1 className="text-3xl font-bold text-primary-foreground mb-6">
+          Resources
+        </h1>
         <p className="text-gray-700 mb-8">
           We’ve compiled a list of trusted organizations and hotlines offering
           support for mental health, substance abuse, crisis intervention, and

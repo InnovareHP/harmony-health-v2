@@ -46,12 +46,12 @@ function HeroSection() {
           </h1>
           <p className="text-xl text-gray-200 mb-8 leading-relaxed">
             Helping older adults and their families find safety, healing, and
-            hope through evidence-based treatment and personalized care.
+            hope in Harmony
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <a
               href="/referrals"
-              className="bg-primary hover:bg-primary/90 text-primary-foreground px-8 py-4 rounded-lg font-semibold transition-all duration-200 shadow-lg hover:shadow-xl"
+              className="bg-primary hover:bg-primary/90 px-8 py-4 rounded-lg font-semibold transition-all duration-200 shadow-lg hover:shadow-xl"
             >
               Make a Referral
             </a>
@@ -98,7 +98,7 @@ function ProgramsPreview() {
     <section className="py-20 px-6 md:px-12 bg-white">
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-16">
-          <h2 className="text-4xl font-bold text-gray-900 mb-4">
+          <h2 className="text-4xl font-bold text-primary-foreground mb-4">
             Programs & Services
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
@@ -129,7 +129,7 @@ function ProgramsPreview() {
         <div className="text-center mt-16">
           <a
             href="/treatment-programs"
-            className="bg-primary hover:bg-primary/90 text-primary-foreground px-8 py-4 rounded-lg font-semibold transition-all duration-200 shadow-lg hover:shadow-xl"
+            className="bg-primary hover:bg-primary/90 px-8 py-4 rounded-lg font-semibold transition-all duration-200 shadow-lg hover:shadow-xl"
           >
             Explore Our Services
           </a>
@@ -146,7 +146,7 @@ function AboutCareSection() {
       <div className="max-w-7xl mx-auto">
         <div className="grid lg:grid-cols-2 gap-16 items-center">
           <div>
-            <h2 className="text-4xl font-bold mb-6 text-gray-900 leading-tight">
+            <h2 className="text-4xl font-bold mb-6 text-primary-foreground leading-tight">
               Whole-Person, Family-Centered Care
             </h2>
             <p className="mb-8 text-lg text-gray-600 leading-relaxed">
@@ -157,7 +157,7 @@ function AboutCareSection() {
             </p>
             <a
               href="/about-us"
-              className="bg-primary hover:bg-primary/90 text-primary-foreground px-8 py-4 rounded-lg font-semibold transition-all duration-200 shadow-lg hover:shadow-xl group"
+              className="bg-primary hover:bg-primary/90 px-8 py-4 rounded-lg font-semibold transition-all duration-200 shadow-lg hover:shadow-xl group"
             >
               Meet Our Care Team
               <ChevronRight className="inline ml-2 w-4 h-4 group-hover:translate-x-1 transition-transform" />
@@ -190,7 +190,7 @@ function WhyChooseUs() {
   return (
     <section className="py-20 px-6 md:px-12 bg-white">
       <div className="max-w-4xl mx-auto text-center">
-        <h2 className="text-4xl font-bold mb-6 text-gray-900">
+        <h2 className="text-4xl font-bold mb-6 text-primary-foreground">
           Why Choose Harmony Health?
         </h2>
         <p className="text-xl text-gray-600 mb-12">
@@ -201,9 +201,9 @@ function WhyChooseUs() {
           {features.map((feature, index) => (
             <div
               key={index}
-              className="flex items-start gap-4 p-6 bg-primary/10 rounded-xl"
+              className="flex items-start gap-4 p-6 bg-[#212121]/10 rounded-xl"
             >
-              <div className="bg-primary w-6 h-6 rounded-full flex items-center justify-center flex-shrink-0 mt-0.5">
+              <div className="bg-[#212121] w-6 h-6 rounded-full flex items-center justify-center flex-shrink-0 mt-0.5">
                 <span className="text-primary-foreground text-sm font-bold">
                   {index + 1}
                 </span>
@@ -220,9 +220,9 @@ function WhyChooseUs() {
 // Provider Strip Component
 function ProviderStrip() {
   return (
-    <section className="bg-primary py-16 px-6 md:px-12">
+    <section className="bg-[#212121] py-16 px-6 md:px-12">
       <div className="max-w-4xl mx-auto text-center">
-        <h3 className="text-2xl font-bold text-primary-foreground mb-4">
+        <h3 className="text-2xl font-bold mb-4 text-primary-foreground">
           Healthcare Provider Partnerships
         </h3>
         <p className="mb-8 text-lg text-primary-foreground/80 leading-relaxed">
@@ -232,7 +232,7 @@ function ProviderStrip() {
         </p>
         <a
           href="/referrals"
-          className="bg-white hover:bg-gray-100 text-primary px-8 py-4 rounded-lg font-semibold transition-all duration-200 shadow-lg hover:shadow-xl"
+          className="bg-primary px-8 py-4 rounded-lg font-semibold transition-all duration-200 shadow-lg hover:shadow-xl"
         >
           Refer a Patient
         </a>
@@ -244,10 +244,12 @@ function ProviderStrip() {
 // Contact Section Component
 function ContactSection() {
   return (
-    <section className="py-20 px-6 md:px-12 bg-gray-50">
+    <section className="py-20 px-6 md:px-12 bg-white">
       <div className="max-w-4xl mx-auto">
         <div className="text-center mb-16">
-          <h2 className="text-4xl font-bold text-gray-900 mb-4">Contact Us</h2>
+          <h2 className="text-4xl font-bold text-primary-foreground mb-4">
+            Contact Us
+          </h2>
           <p className="text-xl text-gray-600">
             We're here to help. Reach out to our team for more information.
           </p>
@@ -323,7 +325,7 @@ function ContactSection() {
                 rows={4}
                 className="w-full p-4 border border-gray-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent"
               />
-              <button className="w-full bg-primary hover:bg-primary/90 text-primary-foreground px-8 py-4 rounded-lg font-semibold transition-all duration-200 shadow-lg hover:shadow-xl">
+              <button className="w-full bg-primary hover:bg-primary/90 px-8 py-4 rounded-lg font-semibold transition-all duration-200 shadow-lg hover:shadow-xl">
                 Get in Touch Today
               </button>
             </div>
@@ -361,7 +363,7 @@ function ResourcesSection() {
     <section className="py-20 px-6 md:px-12 bg-white">
       <div className="max-w-4xl mx-auto">
         <div className="text-center mb-16">
-          <h2 className="text-4xl font-bold text-gray-900 mb-4">
+          <h2 className="text-4xl font-bold text-primary-foreground mb-4">
             Mental Health Resources
           </h2>
           <p className="text-xl text-gray-600">
@@ -376,12 +378,12 @@ function ResourcesSection() {
               href={url}
               target="_blank"
               rel="noopener noreferrer"
-              className="group p-6 bg-gray-50 hover:bg-primary/5 rounded-xl transition-all duration-200 border border-gray-100 hover:border-primary/20"
+              className="group p-6 bg-[#212121]/10 hover:bg-primary/5 rounded-xl transition-all duration-200 border border-gray-100 hover:border-primary/20"
             >
               <div className="flex items-center justify-between">
                 <div>
-                  <h3 className="font-semibold text-gray-900 mb-2">{title}</h3>
-                  <p className="text-gray-600 font-medium">{info}</p>
+                  <h3 className="font-semibold mb-2">{title}</h3>
+                  <p className="font-medium">{info}</p>
                 </div>
                 <ExternalLink className="w-5 h-5 text-gray-400 group-hover:text-primary transition-colors" />
               </div>

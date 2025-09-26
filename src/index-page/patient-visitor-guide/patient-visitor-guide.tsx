@@ -29,7 +29,7 @@ export default function PatientVisitorGuide() {
   return (
     <section className="bg-white py-16 px-6 md:px-12">
       <div className="max-w-7xl mx-auto text-center">
-        <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+        <h2 className="text-3xl md:text-4xl font-bold text-primary-foreground mb-4">
           Patient Visitor Guide
         </h2>
         <p className="text-gray-600 max-w-2xl mx-auto mb-12">
@@ -42,7 +42,7 @@ export default function PatientVisitorGuide() {
             <a
               href={item.href}
               key={item.title}
-              className="border border-gray-200 rounded-xl p-6 shadow-sm hover:shadow-md transition duration-200 text-left hover:bg-gray-50 cursor-pointer"
+              className="border border-gray-200 bg-[#212121]/10 rounded-xl p-6 shadow-sm hover:shadow-md transition duration-200 text-left hover:bg-gray-50 cursor-pointer"
             >
               <h3 className="text-xl font-semibold text-primary mb-2">
                 {item.title}

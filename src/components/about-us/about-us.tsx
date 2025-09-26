@@ -6,7 +6,7 @@ const AboutUs = () => {
         <img
           src="/images/about-us.jpg"
           alt="Warm, welcoming hospital setting"
-          className="w-full h-full object-cover"
+          className="w-full h-full object-cover object-top"
         />
       </div>
 

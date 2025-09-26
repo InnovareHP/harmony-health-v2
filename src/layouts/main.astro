@@ -1,20 +1,22 @@
 ---
-// Import styles and components
-import '../styles/global.css';
 import MainLayout from "../components/layout/MainLayout";
+import '../styles/global.css';
 ---
+
 <html lang="en">
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
 
     <!-- Title & Description -->
-    <title>Rivers Residence | Where Everything Flows, Healing Follows</title>
-    <meta name="description" content="Rivers Residence offers compassionate and dignified housing for individuals with behavioral health needs. Experience a safe, structured, and supportive living environment." />
+    <title>Harmony Health |  Compassionate Psychiatric Care for Seniors</title>
+    <meta name="description" content="Harmony Health provides compassionate psychiatric care tailored for seniors, offering a safe, supportive, and structured environment for healing and dignity." />
 
     <!-- Favicon -->
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-    <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap" rel="stylesheet">
+
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&display=swap" rel="stylesheet">
 
     <!-- Open Graph for Social Sharing -->
     <meta property="og:title" content="Rivers Residence" />
@@ -35,10 +37,8 @@ import MainLayout from "../components/layout/MainLayout";
   </head>
 
   <body>
-
      <MainLayout client:load>
       <slot />
     </MainLayout>
-
   </body>
 </html>

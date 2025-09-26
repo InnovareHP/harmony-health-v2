@@ -31,22 +31,22 @@ const ContactUs = () => {
         <section aria-labelledby="contact-heading">
           <h1
             id="contact-heading"
-            className="text-3xl font-bold text-green-700 mb-6"
+            className="text-3xl font-bold text-primary-foreground mb-6"
           >
             Contact Us
           </h1>
 
           <div className="rounded-xl border border-gray-200 bg-white p-6 shadow-sm mb-8">
-            <h2 className="text-xl font-semibold text-green-600 mb-2">
+            <h2 className="text-xl font-semibold text-primary mb-2">
               {org.name}
             </h2>
-            <p className="text-gray-800">
+            <p className="text-primary-foreground">
               {org.street}
               <br />
               {org.cityStateZip}
             </p>
 
-            <dl className="mt-4 space-y-1 text-gray-800">
+            <dl className="mt-4 space-y-1 text-primary-foreground">
               <div>
                 <dt className="sr-only">Fax</dt>
                 <dd>Fax: {org.fax}</dd>
@@ -54,10 +54,7 @@ const ContactUs = () => {
               <div>
                 <dt className="sr-only">Email</dt>
                 <dd>
-                  <a
-                    href={`mailto:${org.email}`}
-                    className="text-blue-600 hover:underline"
-                  >
+                  <a href={`mailto:${org.email}`} className="hover:underline">
                     {org.email}
                   </a>
                 </dd>

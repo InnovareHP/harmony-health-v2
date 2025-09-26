@@ -3,7 +3,9 @@ const Visitation = () => {
     <div className="items-start">
       {/* LEFT: copy */}
       <div>
-        <h1 className="text-3xl font-bold text-green-700 mb-6">Visitation</h1>
+        <h1 className="text-3xl font-bold text-primary-foreground mb-6">
+          Visitation
+        </h1>
 
         <h2 className="text-xl font-semibold text-green-600 mb-2">
           Visitation Guidelines

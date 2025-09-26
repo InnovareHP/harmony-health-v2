@@ -3,7 +3,7 @@ const DischargeToFacility = () => {
     <div className=" gap-8 items-start">
       {/* LEFT content */}
       <div>
-        <h1 className="text-3xl font-bold text-green-700 mb-4">
+        <h1 className="text-3xl font-bold text-primary-foreground mb-4">
           Discharge to a Facility
         </h1>
         <div className="float-right w-96 ml-6 mb-4">
