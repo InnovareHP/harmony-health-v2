@@ -7,7 +7,7 @@ const Visitation = () => {
           Visitation
         </h1>
 
-        <h2 className="text-xl font-semibold text-green-600 mb-2">
+        <h2 className="text-xl font-semibold text-primary mb-2">
           Visitation Guidelines
         </h2>
         <div className="float-right w-96 ml-6 mb-4">
@@ -25,7 +25,7 @@ const Visitation = () => {
           meet.
         </p>
 
-        <h2 className="text-xl font-semibold text-green-600 mb-2">
+        <h2 className="text-xl font-semibold text-primary mb-2">
           Visitation Hours:
         </h2>
         <p className="text-gray-900 font-semibold">
@@ -42,7 +42,7 @@ const Visitation = () => {
           see postings on unit for the most up‑to‑date information.
         </p>
 
-        <h3 className="text-green-600 font-semibold mb-2">
+        <h3 className="text-primary font-semibold mb-2">
           Visiting Holidays Include:
         </h3>
         <ul className="list-disc list-inside space-y-1 mb-6 text-gray-900">
@@ -54,7 +54,7 @@ const Visitation = () => {
           <li className="font-semibold">Christmas Day</li>
         </ul>
 
-        <h2 className="text-xl font-semibold text-green-600 mb-2">
+        <h2 className="text-xl font-semibold text-primary mb-2">
           Visitation Procedure:
         </h2>
         <ul className="list-disc list-inside space-y-3 text-gray-800">

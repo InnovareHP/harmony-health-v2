@@ -11,9 +11,9 @@ import {
 // Crisis Banner Component
 export function CrisisBanner() {
   return (
-    <Alert className="rounded-none border-none bg-destructive/10 border-l-4 border-l-destructive">
-      <AlertDescription className="text-destructive font-medium flex sm:flex-row flex-col items-center justify-center w-full gap-2">
-        <AlertTriangle className="h-4 w-4 text-destructive" />
+    <Alert className="rounded-none border-none bg-primary border-l-4 border-l-destructive">
+      <AlertDescription className="text-black font-medium flex sm:flex-row flex-col items-center justify-center w-full gap-2">
+        <AlertTriangle className="h-4 w-4 text-black" />
         If you or a loved one is in immediate crisis, dial 911 or call the{" "}
         <strong>988 Suicide & Crisis Lifeline</strong>
       </AlertDescription>
@@ -28,7 +28,7 @@ function HeroSection() {
       {/* Background image wrapper */}
       <div className="absolute inset-0 z-0">
         <img
-          src="/banner/hero-banner.png"
+          src="/banner/banner.png"
           alt="Hero background"
           className="w-full h-full object-cover"
         />

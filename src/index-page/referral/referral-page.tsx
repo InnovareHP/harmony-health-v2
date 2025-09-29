@@ -58,7 +58,7 @@ function ReferralHero() {
       <div className="relative h-[50vh] md:h-[60vh] overflow-hidden">
         {/* Real image for better LCP + decoding */}
         <img
-          src="/images/referral.jpg"
+          src="/images/referral_process.jpg"
           alt="Clipboard and stethoscope symbolizing referrals"
           className="absolute inset-0 h-full w-full object-cover object-center"
           loading="eager"
@@ -72,7 +72,7 @@ function ReferralHero() {
           <div>
             <h1
               id="referrals-title"
-              className="text-3xl md:text-5xl font-bold mb-3 text-primary-foreground"
+              className="text-3xl md:text-5xl font-bold mb-3 text-primary"
             >
               Partnering with Providers to Support Seniors in Crisis
             </h1>
@@ -142,7 +142,7 @@ function ReferralProcess() {
               key={title}
               className="bg-[#212121]/10 rounded-lg border p-5 shadow-sm"
             >
-              <div className="inline-flex h-8 w-8 items-center justify-center rounded-full bg-primary text-primary-foreground text-sm font-bold">
+              <div className="inline-flex h-8 w-8 items-center justify-center rounded-full bg-primary text-black text-sm font-bold">
                 {idx + 1}
               </div>
               <h3 className="font-semibold mt-3">{title}</h3>
@@ -190,7 +190,7 @@ function Continuum() {
         <div className="flex flex-col gap-4 md:flex-row md:items-center md:gap-6">
           {CONTINUUM_PATH.map((step, i) => (
             <div key={step} className="flex items-center">
-              <span className="inline-flex h-8 w-8 items-center justify-center rounded-full bg-primary text-sm font-bold text-white">
+              <span className="inline-flex h-8 w-8 items-center justify-center rounded-full bg-primary text-sm font-bold text-black">
                 {i + 1}
               </span>
               <span className="ml-3 font-medium text-white">{step}</span>
@@ -273,7 +273,10 @@ function ReferralContact() {
   return (
     <section className="py-16 bg-white" aria-labelledby="contact-title">
       <div className="max-w-4xl mx-auto text-center px-6 md:px-12">
-        <h2 id="contact-title" className="text-3xl font-bold mb-4">
+        <h2
+          id="contact-title"
+          className="text-3xl font-bold mb-4 text-primary-foreground"
+        >
           Referral Contact
         </h2>
 

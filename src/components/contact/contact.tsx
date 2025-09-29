@@ -67,7 +67,7 @@ const ContactUs = () => {
             onSubmit={onSubmit}
             className="rounded-xl border border-gray-200 bg-white p-6 shadow-sm space-y-4"
           >
-            <h2 className="text-xl font-semibold text-green-600">
+            <h2 className="text-xl font-semibold text-primary">
               Get in Touch Today
             </h2>
 
@@ -84,7 +84,7 @@ const ContactUs = () => {
                   name="name"
                   required
                   type="text"
-                  className="mt-1 w-full rounded-lg border border-gray-300 bg-white px-3 py-2 text-sm outline-none focus:border-green-600"
+                  className="mt-1 w-full rounded-lg border border-gray-300 bg-white px-3 py-2 text-sm outline-none focus:border-primary"
                   placeholder="Your full name"
                 />
               </div>
@@ -101,7 +101,7 @@ const ContactUs = () => {
                   name="contact"
                   required
                   type="text"
-                  className="mt-1 w-full rounded-lg border border-gray-300 bg-white px-3 py-2 text-sm outline-none focus:border-green-600"
+                  className="mt-1 w-full rounded-lg border border-gray-300 bg-white px-3 py-2 text-sm outline-none focus:border-primary"
                   placeholder="(555) 555-5555 or you@example.com"
                 />
               </div>
@@ -118,7 +118,7 @@ const ContactUs = () => {
                 id="reason"
                 name="reason"
                 required
-                className="mt-1 w-full rounded-lg border border-gray-300 bg-white px-3 py-2 text-sm outline-none focus:border-green-600"
+                className="mt-1 w-full rounded-lg border border-gray-300 bg-white px-3 py-2 text-sm outline-none focus:border-primary"
                 defaultValue=""
               >
                 <option value="" disabled>
@@ -142,7 +142,7 @@ const ContactUs = () => {
                 id="message"
                 name="message"
                 rows={4}
-                className="mt-1 w-full rounded-lg border border-gray-300 bg-white px-3 py-2 text-sm outline-none focus:border-green-600"
+                className="mt-1 w-full rounded-lg border border-gray-300 bg-white px-3 py-2 text-sm outline-none focus:border-primary"
                 placeholder="How can we help?"
               />
             </div>
@@ -155,7 +155,7 @@ const ContactUs = () => {
             <button
               type="submit"
               disabled={status !== "idle"}
-              className="mt-2 inline-flex items-center justify-center rounded-lg bg-green-700 px-5 py-3 text-sm font-semibold text-white hover:bg-green-800 disabled:opacity-60"
+              className="mt-2 inline-flex items-center justify-center rounded-lg bg-primary px-5 py-3 text-sm font-semibold text-white hover:bg-primary/90 disabled:opacity-60"
             >
               {status === "sent"
                 ? "Thanks! We’ll be in touch."
@@ -166,7 +166,7 @@ const ContactUs = () => {
 
         {/* RIGHT: Interactive Map */}
         <aside className="space-y-4">
-          <h2 className="text-lg font-semibold text-green-600">Map</h2>
+          <h2 className="text-lg font-semibold text-primary">Map</h2>
           <div className="rounded-xl overflow-hidden border border-gray-200 shadow-sm">
             <iframe
               title="Harmony Health Location"

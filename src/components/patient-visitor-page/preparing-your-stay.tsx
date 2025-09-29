@@ -6,7 +6,7 @@ const PreparingYourStay = () => {
           Preparing for Your Stay
         </h1>
 
-        <h2 className="text-xl font-semibold text-green-600 mb-2">
+        <h2 className="text-xl font-semibold text-primary mb-2">
           Personal Items
         </h2>
 

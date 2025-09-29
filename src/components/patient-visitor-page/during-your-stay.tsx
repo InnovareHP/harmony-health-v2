@@ -6,9 +6,7 @@ const DuringYourStay = () => {
           During Your Stay
         </h1>
 
-        <h2 className="text-xl font-semibold text-green-600 mb-2">
-          Orientation
-        </h2>
+        <h2 className="text-xl font-semibold text-primary mb-2">Orientation</h2>
         <p className="text-gray-800 mb-4">
           At Harmony Health, we value each individual and are committed to
           understanding your story and helping you achieve wellness. We
@@ -58,7 +56,7 @@ const DuringYourStay = () => {
           treatment, services or care.
         </p>
 
-        <h2 className="text-xl font-semibold text-green-600 mt-8 mb-2">
+        <h2 className="text-xl font-semibold text-primary mt-8 mb-2">
           Inpatient Visitation Guidelines
         </h2>
         <p className="text-gray-800 mb-2">
@@ -108,7 +106,7 @@ const DuringYourStay = () => {
           <li>Clergy, attorneys, and court reps may visit any time.</li>
         </ul>
 
-        <h2 className="text-xl font-semibold text-green-600 mt-8 mb-2">
+        <h2 className="text-xl font-semibold text-primary mt-8 mb-2">
           Phone Call Guidelines
         </h2>
         <p className="text-gray-800 mb-4">
@@ -117,7 +115,7 @@ const DuringYourStay = () => {
           calls deemed inappropriate.
         </p>
 
-        <h2 className="text-xl font-semibold text-green-600 mt-8 mb-2">
+        <h2 className="text-xl font-semibold text-primary mt-8 mb-2">
           Mail Guidelines
         </h2>
         <p className="text-gray-800 mb-4">
@@ -125,14 +123,14 @@ const DuringYourStay = () => {
           safety. Outgoing mail is collected daily at the Nurses’ Station.
         </p>
 
-        <h2 className="text-xl font-semibold text-green-600 mt-8 mb-2">
+        <h2 className="text-xl font-semibold text-primary mt-8 mb-2">
           Laundry Guidelines
         </h2>
         <p className="text-gray-800 mb-4">
           Please notify nursing staff for laundry assistance.
         </p>
 
-        <h2 className="text-xl font-semibold text-green-600 mt-8 mb-2">
+        <h2 className="text-xl font-semibold text-primary mt-8 mb-2">
           Relaxation Time Guidelines
         </h2>
         <ul className="list-disc list-inside text-gray-800 space-y-1 mb-4">
@@ -142,7 +140,7 @@ const DuringYourStay = () => {
           <li>No personal MP3 players, tablets, or handheld games allowed.</li>
         </ul>
 
-        <h2 className="text-xl font-semibold text-green-600 mt-8 mb-2">
+        <h2 className="text-xl font-semibold text-primary mt-8 mb-2">
           Post-Discharge Care
         </h2>
         <p className="text-gray-800 mb-4">

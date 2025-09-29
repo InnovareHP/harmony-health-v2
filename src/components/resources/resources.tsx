@@ -50,7 +50,7 @@ const Resources = () => {
               key={resource.name}
               className="border-l-4 border-green-600 pl-4"
             >
-              <h2 className="text-lg font-semibold text-green-700">
+              <h2 className="text-lg font-semibold text-primary">
                 {resource.name}
               </h2>
               {resource.phone && (

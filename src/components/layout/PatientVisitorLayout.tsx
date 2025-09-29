@@ -34,7 +34,7 @@ export default function StayInfoSection({ children }: Props) {
             <li key={item.title} className="border-b pb-2">
               <a
                 href={item.href}
-                className="text-green-700 font-medium hover:underline hover:text-green-800 transition-colors"
+                className="text-primary font-medium hover:underline hover:text-primary transition-colors"
               >
                 {item.title}
               </a>

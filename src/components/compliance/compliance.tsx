@@ -19,7 +19,7 @@ const ComplianceLegalPolicies = () => {
         {/* LEFT: Main copy */}
         <article className="space-y-10">
           <header>
-            <h1 className="text-3xl font-bold text-green-700">
+            <h1 className="text-3xl font-bold text-primary">
               Compliance, Legal, and Policies
             </h1>
             <p className="text-gray-700 mt-2">
@@ -33,7 +33,7 @@ const ComplianceLegalPolicies = () => {
             aria-labelledby="medical-disclaimer-heading"
           >
             <h2
-              className="text-2xl font-semibold text-green-600 mb-3"
+              className="text-2xl font-semibold text-primary mb-3"
               id="medical-disclaimer-heading"
             >
               Medical Disclaimer
@@ -56,7 +56,7 @@ const ComplianceLegalPolicies = () => {
             aria-labelledby="notice-heading"
           >
             <h2
-              className="text-2xl font-semibold text-green-600 mb-3"
+              className="text-2xl font-semibold text-primary mb-3"
               id="notice-heading"
             >
               Notice of Nondiscrimination
@@ -86,7 +86,7 @@ const ComplianceLegalPolicies = () => {
 
           <section id="language-assistance" aria-labelledby="language-heading">
             <h2
-              className="text-2xl font-semibold text-green-600 mb-3"
+              className="text-2xl font-semibold text-primary mb-3"
               id="language-heading"
             >
               Language Assistance
@@ -105,7 +105,7 @@ const ComplianceLegalPolicies = () => {
 
           <section id="accessibility" aria-labelledby="accessibility-heading">
             <h2
-              className="text-2xl font-semibold text-green-600 mb-3"
+              className="text-2xl font-semibold text-primary mb-3"
               id="accessibility-heading"
             >
               Accessibility Statement
@@ -120,7 +120,7 @@ const ComplianceLegalPolicies = () => {
 
           <section id="privacy-policy" aria-labelledby="privacy-heading">
             <h2
-              className="text-2xl font-semibold text-green-600 mb-3"
+              className="text-2xl font-semibold text-primary mb-3"
               id="privacy-heading"
             >
               Website Privacy Policy
@@ -181,7 +181,7 @@ const ComplianceLegalPolicies = () => {
 
           <section id="cookie-policy" aria-labelledby="cookie-policy-heading">
             <h2
-              className="text-2xl font-semibold text-green-600 mb-3"
+              className="text-2xl font-semibold text-primary mb-3"
               id="cookie-policy-heading"
             >
               Cookie Policy
@@ -215,7 +215,7 @@ const ComplianceLegalPolicies = () => {
 
           <section id="cookie-banner" aria-labelledby="cookie-banner-heading">
             <h2
-              className="text-2xl font-semibold text-green-600 mb-3"
+              className="text-2xl font-semibold text-primary mb-3"
               id="cookie-banner-heading"
             >
               Cookie Banner Language
@@ -232,7 +232,7 @@ const ComplianceLegalPolicies = () => {
             aria-labelledby="form-disclaimer-heading"
           >
             <h2
-              className="text-2xl font-semibold text-green-600 mb-3"
+              className="text-2xl font-semibold text-primary mb-3"
               id="form-disclaimer-heading"
             >
               Form Disclaimer
@@ -250,7 +250,7 @@ const ComplianceLegalPolicies = () => {
             aria-labelledby="price-transparency-heading"
           >
             <h2
-              className="text-2xl font-semibold text-green-600 mb-3"
+              className="text-2xl font-semibold text-primary mb-3"
               id="price-transparency-heading"
             >
               Price Transparency
@@ -279,7 +279,7 @@ const ComplianceLegalPolicies = () => {
 
           <section id="no-surprises-act" aria-labelledby="nsa-heading">
             <h2
-              className="text-2xl font-semibold text-green-600 mb-3"
+              className="text-2xl font-semibold text-primary mb-3"
               id="nsa-heading"
             >
               No Surprises Act
@@ -307,7 +307,7 @@ const ComplianceLegalPolicies = () => {
               <a
                 key={i.id}
                 href={`#${i.id}`}
-                className="block text-green-700 hover:underline"
+                className="block text-primary hover:underline"
               >
                 {i.label}
               </a>
