@@ -9,6 +9,7 @@ const AboutUs = () => {
           className="w-full h-full object-cover object-top"
         />
       </div>
+      <div className="bg-gradient-to-r from-primary to-primary/10 h-4"></div>
 
       {/* Content */}
       <main className="max-w-7xl mx-auto px-6 py-12 space-y-12">

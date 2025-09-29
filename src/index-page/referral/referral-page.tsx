@@ -66,6 +66,7 @@ function ReferralHero() {
           fetchPriority="high"
         />
         <div className="absolute inset-0 bg-black/45" />
+
         <div
           className={`${CONTAINER} relative text-white flex h-full items-center`}
         >
@@ -83,6 +84,7 @@ function ReferralHero() {
           </div>
         </div>
       </div>
+      <div className="bg-gradient-to-r from-primary to-primary/10 h-4"></div>
     </section>
   );
 }

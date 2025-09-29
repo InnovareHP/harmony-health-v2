@@ -9,7 +9,8 @@ const OurFocus = () => {
           className="w-full h-full object-cover"
         />
       </div>
-
+      <div className="bg-gradient-to-r from-primary to-primary/10 h-4"></div>
+    
       {/* Content */}
       <section className="max-w-7xl mx-auto px-6 py-12 grid lg:grid-cols-[1.6fr_1fr] gap-12">
         {/* LEFT: Main Content */}
