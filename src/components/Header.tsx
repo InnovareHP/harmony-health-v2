@@ -8,7 +8,7 @@ export default function Header() {
   const toggleMenu = () => setIsOpen(!isOpen);
 
   return (
-    <header className="bg-[#212121] shadow sticky top-0 z-50">
+    <header className="bg-[#c3dac6] shadow sticky top-0 z-50">
       <div className="max-w-7xl mx-auto flex items-center justify-between px-6 py-4">
         <a href="/">
           <img
@@ -47,43 +47,26 @@ export default function Header() {
 function NavLinks() {
   return (
     <>
-      <a
-        href="/about-us"
-        className="hover:text-primary text-primary-foreground"
-      >
-        About Us
-      </a>
-      <a
-        href="/our-focus"
-        className="hover:text-primary text-primary-foreground"
-      >
+      <a href="/our-focus" className="hover:text-primary">
         Our Focus
       </a>
-      <a
-        href="/patient-visitor-guide"
-        className="hover:text-primary text-primary-foreground"
-      >
+
+      <a href="/patient-visitor-guide" className="hover:text-primary">
         Patient & Visitor Guide
       </a>
-      <a
-        href="/treatment-programs"
-        className="hover:text-primary text-primary-foreground"
-      >
+      <a href="/treatment-programs" className="hover:text-primary">
         Treatment & services
       </a>
-      <a
-        href="/referrals"
-        className="hover:text-primary text-primary-foreground"
-      >
+      <a href="/referrals" className="hover:text-primary">
         Referral Process
       </a>
-      <a href="/contact" className="hover:text-primary text-primary-foreground">
+      <a href="/about-us" className="hover:text-primary">
+        About Us
+      </a>
+      <a href="/contact" className="hover:text-primary">
         Contact
       </a>
-      <a
-        href="/resources"
-        className="hover:text-primary text-primary-foreground"
-      >
+      <a href="/resources" className="hover:text-primary">
         Resources
       </a>
     </>

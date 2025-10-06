@@ -48,7 +48,7 @@ const Resources = () => {
           {resources.map((resource) => (
             <li
               key={resource.name}
-              className="border-l-4 border-green-600 pl-4"
+              className="border-l-4 border-green-600 pl-4 bg-background-secondary/10 rounded-xl p-6 shadow-sm"
             >
               <h2 className="text-lg font-semibold text-primary">
                 {resource.name}

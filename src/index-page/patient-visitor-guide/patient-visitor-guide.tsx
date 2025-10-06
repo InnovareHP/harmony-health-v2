@@ -42,7 +42,7 @@ export default function PatientVisitorGuide() {
             <a
               href={item.href}
               key={item.title}
-              className="border border-gray-200 bg-[#212121]/10 rounded-xl p-6 shadow-sm hover:shadow-md transition duration-200 text-left hover:bg-gray-50 cursor-pointer"
+              className="border border-gray-200 bg-background-secondary/10 rounded-xl p-6 shadow-sm hover:shadow-md transition duration-200 text-left hover:bg-gray-50 cursor-pointer"
             >
               <h3 className="text-xl font-semibold text-primary mb-2">
                 {item.title}

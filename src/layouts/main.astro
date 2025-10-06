@@ -1,6 +1,9 @@
 ---
 import MainLayout from "../components/layout/MainLayout";
 import '../styles/global.css';
+
+const { pathname } = Astro.url;
+const isIndexPage = pathname === "/";
 ---
 
 <html lang="en">
@@ -37,7 +40,7 @@ import '../styles/global.css';
   </head>
 
   <body>
-     <MainLayout client:load>
+     <MainLayout client:load isIndexPage={isIndexPage}>
       <slot />
     </MainLayout>
   </body>

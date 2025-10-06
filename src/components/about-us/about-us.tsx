@@ -20,7 +20,7 @@ const AboutUs = () => {
           <h2 id="mission" className="text-2xl font-semibold text-primary mb-3">
             Mission &amp; Values
           </h2>
-          <p className="text-gray-800 leading-relaxed bg-primary-foreground/20 p-6">
+          <p className="text-gray-800 leading-relaxed bg-background-secondary/20 p-6">
             To provide expert, compassionate care for seniors with psychiatric
             needs, treating both mind and body with dignity and respect. Our
             care is built on empathy, clinical excellence, and a commitment to
@@ -33,10 +33,10 @@ const AboutUs = () => {
           <h2 id="facility" className="text-2xl font-semibold text-primary">
             Facility Overview
           </h2>
-          <p className="text-gray-800 leading-relaxed bg-primary-foreground/20 p-6">
+          <p className="text-gray-800 leading-relaxed bg-background-secondary/20 p-6">
             Our safe, modern hospital is designed specifically for older adults
             with behavioral health needs. The facility includes comfortable
-            semi‑private rooms, therapeutic activity spaces, dedicated dining
+            semi-private rooms, therapeutic activity spaces, dedicated dining
             areas, and secure outdoor courtyards to support healing and
             mobility.
           </p>
@@ -64,38 +64,23 @@ const AboutUs = () => {
           </p>
         </section>
 
-        {/* Accreditation & Licensing */}
-        <section aria-labelledby="accreditation">
+        {/* Chief Medical Director Narrative */}
+        <section aria-labelledby="chief-message">
           <h2
-            id="accreditation"
+            id="chief-message"
             className="text-2xl font-semibold text-primary mb-3"
           >
-            Accreditation &amp; Licensing
+            About Us from our Chief Medical Director
           </h2>
-          <p className="text-gray-800 leading-relaxed mb-4 bg-primary-foreground/20 p-6">
-            Harmony Health is licensed by the state and accredited by nationally
-            recognized organizations, including{" "}
-            <span className="font-semibold">The Joint Commission</span>. We are
-            committed to the highest standards of safety, quality, and
-            continuous improvement in behavioral healthcare.
+          <p className="text-gray-800 leading-relaxed italic bg-background-secondary/20 p-6">
+            A personal message and narrative statement from{" "}
+            <span className="font-semibold">Dr. Harmon, MD</span> will be shared
+            here next week.
           </p>
-
-          <div className="flex flex-wrap items-center gap-4">
-            <div className="h-16 w-32 rounded-lg border border-gray-200 bg-white shadow-sm flex items-center justify-center">
-              <span className="text-xs text-gray-600">State License</span>
-            </div>
-            <div className="h-16 w-48 rounded-lg border border-gray-200 bg-white shadow-sm flex items-center justify-center">
-              <span className="text-xs text-gray-600">
-                The Joint Commission
-              </span>
-            </div>
-            <div className="h-16 w-40 rounded-lg border border-gray-200 bg-white shadow-sm flex items-center justify-center">
-              <span className="text-xs text-gray-600">
-                National Accreditation
-              </span>
-            </div>
-          </div>
         </section>
+
+        {/* Accreditation & Licensing (optional) */}
+        {/* <section aria-labelledby="accreditation"> ... </section> */}
       </main>
     </div>
   );

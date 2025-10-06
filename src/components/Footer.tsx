@@ -15,7 +15,7 @@ const policies = [
 
 export default function Footer() {
   return (
-    <footer className="border-t bg-[#212121] text-neutral-700 dark:bg-neutral-950 dark:text-neutral-300">
+    <footer className="border-t bg-[#c3dac6] text-neutral-700 dark:bg-neutral-950 dark:text-neutral-300">
       {/* Top border accent */}
       <div className="h-1 w-full bg-gradient-to-r from-primary/20 via-primary/60 to-primary/20" />
 
@@ -42,23 +42,28 @@ export default function Footer() {
           >
             <div className="flex items-start gap-2">
               <MapPin className="mt-0.5 h-4 w-4" aria-hidden="true" />
-              <span>7001 Bryant Irvin Rd Fort Worth, TX 76132</span>
+              <span className="text-black">
+                7001 Bryant Irvin Rd Fort Worth, TX 76132
+              </span>
             </div>
             <div className="flex items-center gap-2">
               <Phone className="h-4 w-4" aria-hidden="true" />
-              <a href="tel:+1XXXXXXXXXX" className="hover:text-primary">
+              <a
+                href="tel:+18883910229"
+                className="hover:text-primary text-black"
+              >
                 888-391-0229
               </a>
             </div>
             <div className="flex items-center gap-2">
               <Printer className="h-4 w-4" aria-hidden="true" />
-              <span>412-706-9202</span>
+              <span className="text-black">412-706-9202</span>
             </div>
             <div className="flex items-center gap-2">
               <Mail className="h-4 w-4" aria-hidden="true" />
               <a
                 href="mailto:info@harmonyhealth.org"
-                className="hover:text-primary"
+                className="hover:text-primary text-black"
               >
                 info@harmonyhealth.org
               </a>
@@ -98,7 +103,7 @@ export default function Footer() {
               <li key={l.label}>
                 <a
                   href={l.href}
-                  className="inline-flex items-center  hover:text-primary text-primary-foreground"
+                  className="inline-flex items-center hover:text-primary text-black"
                 >
                   {l.label}
                 </a>
@@ -120,7 +125,7 @@ export default function Footer() {
               <li key={l.label}>
                 <a
                   href={l.href}
-                  className="inline-flex items-center text-primary-foreground/80 hover:text-primary"
+                  className="inline-flex items-center text-/80 hover:text-primary"
                 >
                   {l.label}
                 </a>
@@ -133,7 +138,7 @@ export default function Footer() {
       </div>
 
       {/* Bottom bar */}
-      <div className="border-t bg-[#212121] px-6 py-5 text-center text-xs text-neutral-500 dark:border-neutral-800 dark:bg-neutral-900">
+      <div className="border-t bg-[#c3dac6] px-6 py-5 text-center text-xs text-neutral-500 dark:border-neutral-800 dark:bg-neutral-900">
         <p>© {new Date().getFullYear()} Harmony Health. All rights reserved.</p>
       </div>
     </footer>

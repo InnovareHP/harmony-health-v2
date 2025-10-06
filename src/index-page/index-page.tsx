@@ -80,7 +80,7 @@ function ProgramsPreview() {
     {
       image: "/images/outpatient-care.jpg",
       title: "Outpatient Programs",
-      desc: "Structured PHP/IOP therapy and psychiatric monitoring during the day while maintaining independence at home.",
+      desc: "Structured Intensive Outpatient therapy and psychiatric monitoring during the day while maintaining independence at home.",
     },
     {
       image: "/images/family-support.jpg",
@@ -201,9 +201,9 @@ function WhyChooseUs() {
           {features.map((feature, index) => (
             <div
               key={index}
-              className="flex items-start gap-4 p-6 bg-[#212121]/10 rounded-xl"
+              className="flex items-start gap-4 p-6 bg-background-secondary/10 rounded-xl"
             >
-              <div className="bg-[#212121] w-6 h-6 rounded-full flex items-center justify-center flex-shrink-0 mt-0.5">
+              <div className="bg-[#c3dac6] w-6 h-6 rounded-full flex items-center justify-center flex-shrink-0 mt-0.5">
                 <span className="text-primary-foreground text-sm font-bold">
                   {index + 1}
                 </span>
@@ -220,19 +220,19 @@ function WhyChooseUs() {
 // Provider Strip Component
 function ProviderStrip() {
   return (
-    <section className="bg-[#212121] py-16 px-6 md:px-12">
+    <section className="bg-[#71ae83] py-16 px-6 md:px-12">
       <div className="max-w-4xl mx-auto text-center">
-        <h3 className="text-2xl font-bold mb-4 text-primary-foreground">
+        <h3 className="text-2xl font-bold mb-4 text-black">
           Healthcare Provider Partnerships
         </h3>
-        <p className="mb-8 text-lg text-primary-foreground/80 leading-relaxed">
+        <p className="mb-8 text-lg text-black leading-relaxed">
           We partner with hospitals, physicians, nursing facilities, and case
           managers to ensure safe, seamless transitions of care. Our admissions
           team is available 24/7.
         </p>
         <a
           href="/referrals"
-          className="bg-primary px-8 py-4 rounded-lg font-semibold transition-all duration-200 shadow-lg hover:shadow-xl"
+          className="bg-[#71ae83] px-8 py-4 rounded-lg font-semibold transition-all duration-200 shadow-lg hover:shadow-xl"
         >
           Refer a Patient
         </a>
@@ -255,10 +255,10 @@ function ContactSection() {
           </p>
         </div>
 
-        <div className="grid md:grid-cols-2 gap-12">
+        <div className="flex flex-col gap-12 items-center justify-center">
           <div className="space-y-8">
             <div>
-              <h3 className="text-2xl font-bold text-gray-900 mb-6">
+              <h3 className="text-2xl font-bold text-gray-900 mb-6 text-center">
                 Get in Touch
               </h3>
               <div className="space-y-4">
@@ -296,38 +296,6 @@ function ContactSection() {
                   </div>
                 </div>
               </div>
-            </div>
-          </div>
-
-          <div className="bg-white rounded-2xl shadow-xl p-8">
-            <div className="space-y-6">
-              <div className="grid md:grid-cols-2 gap-4">
-                <input
-                  type="text"
-                  placeholder="Full Name"
-                  className="w-full p-4 border border-gray-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent"
-                />
-                <input
-                  type="text"
-                  placeholder="Phone or Email"
-                  className="w-full p-4 border border-gray-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent"
-                />
-              </div>
-              <select className="w-full p-4 border border-gray-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent">
-                <option>Reason for Inquiry</option>
-                <option>Referral</option>
-                <option>General Question</option>
-                <option>Admissions</option>
-                <option>Records</option>
-              </select>
-              <textarea
-                placeholder="Message (optional)"
-                rows={4}
-                className="w-full p-4 border border-gray-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent"
-              />
-              <button className="w-full bg-primary hover:bg-primary/90 px-8 py-4 rounded-lg font-semibold transition-all duration-200 shadow-lg hover:shadow-xl">
-                Get in Touch Today
-              </button>
             </div>
           </div>
         </div>
@@ -378,7 +346,7 @@ function ResourcesSection() {
               href={url}
               target="_blank"
               rel="noopener noreferrer"
-              className="group p-6 bg-[#212121]/10 hover:bg-primary/5 rounded-xl transition-all duration-200 border border-gray-100 hover:border-primary/20"
+              className="group p-6 bg-[#c3dac6]/10 hover:bg-primary/5 rounded-xl transition-all duration-200 border border-gray-100 hover:border-primary/20"
             >
               <div className="flex items-center justify-between">
                 <div>

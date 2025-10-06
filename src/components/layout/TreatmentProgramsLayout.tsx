@@ -9,7 +9,7 @@ export default function StayInfoSection({ children }: Props) {
       href: "/treatment-programs/inpatient-program",
     },
     {
-      title: "Outpatient Programs (PHP/IOP)",
+      title: "Intensive Outpatient",
       href: "/treatment-programs/outpatient-programs",
     },
     {

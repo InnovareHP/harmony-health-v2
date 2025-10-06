@@ -6,7 +6,7 @@ const services = [
   },
   {
     emoji: "🌅",
-    title: "Outpatient Programs (PHP/IOP)",
+    title: "Intensive Outpatient ",
     desc: "Structured therapy and psychiatric monitoring during the day, while living at home.",
   },
   {

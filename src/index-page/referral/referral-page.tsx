@@ -17,15 +17,8 @@ const REFERRAL_STEPS: Array<[title: string, subtitle: string]> = [
   ["Admission & Family Support", "Families included from day one"],
 ];
 
-const CONTINUUM_PATH = [
-  "Inpatient stabilization",
-  "PHP/IOP programs",
-  "Outpatient therapy / community resources",
-] as const;
-
 const WHY_REFER = [
   "Geriatric psychiatry expertise",
-  "Accredited & licensed",
   "Interdisciplinary team",
   "Family-centered approach",
   "Strong discharge planning & continuum of care",
@@ -35,10 +28,8 @@ export default function ReferralsPage() {
   return (
     <main aria-labelledby="referrals-title">
       <ReferralHero />
-      <WhoWeServe />
       <ReferralProcess />
       <CommitmentFamilies />
-      <Continuum />
       <Insurance />
       <WhyRefer />
       <ReferralContact />
@@ -89,50 +80,11 @@ function ReferralHero() {
   );
 }
 
-function WhoWeServe() {
-  return (
-    <section className="py-16 bg-white" aria-labelledby="serve-title">
-      <div className={`${CONTAINER} grid lg:grid-cols-2 gap-10 items-start`}>
-        <div>
-          <h2
-            id="serve-title"
-            className="text-3xl font-bold mb-3 text-primary-foreground"
-          >
-            Who We Serve
-          </h2>
-          <p className="text-gray-700 mb-4">
-            We specialize in psychiatric care for adults <strong>55+</strong>{" "}
-            experiencing:
-          </p>
-          <ul className="list-disc list-inside space-y-2 text-gray-700">
-            {SERVE_ITEMS.map((t) => (
-              <li key={t}>{t}</li>
-            ))}
-          </ul>
-        </div>
-
-        <aside className="rounded-lg p-6 border border-primary/20 bg-[#212121]/10">
-          <h3 className="font-semibold text-lg mb-2">
-            Common Referral Sources
-          </h3>
-          <p className="text-gray-700">
-            Hospitals, physicians, emergency departments, nursing homes, and
-            community providers.
-          </p>
-        </aside>
-      </div>
-    </section>
-  );
-}
-
 function ReferralProcess() {
   return (
-    <section className="py-16 bg-gray-50" aria-labelledby="process-title">
+    <section className="py-16 bg-primary" aria-labelledby="process-title">
       <div className={CONTAINER}>
-        <h2
-          id="process-title"
-          className="text-3xl font-bold mb-8 text-primary-foreground"
-        >
+        <h2 id="process-title" className="text-3xl font-bold mb-8 text-black">
           Referral Process
         </h2>
         <ol
@@ -142,9 +94,9 @@ function ReferralProcess() {
           {REFERRAL_STEPS.map(([title, subtitle], idx) => (
             <li
               key={title}
-              className="bg-[#212121]/10 rounded-lg border p-5 shadow-sm"
+              className="bg-background-secondary rounded-lg border p-5 shadow-sm"
             >
-              <div className="inline-flex h-8 w-8 items-center justify-center rounded-full bg-primary text-black text-sm font-bold">
+              <div className="inline-flex h-8 w-8 items-center justify-center rounded-full bg-primary-foreground text-black text-sm font-bold">
                 {idx + 1}
               </div>
               <h3 className="font-semibold mt-3">{title}</h3>
@@ -161,7 +113,7 @@ function CommitmentFamilies() {
   return (
     <section className="py-16 bg-white" aria-labelledby="families-title">
       <div className="max-w-4xl mx-auto px-6 md:px-12">
-        <div className="rounded-2xl border border-primary/20 bg-[#212121]/10 p-8 text-center">
+        <div className="rounded-2xl border border-primary/20 bg-[#c3dac6]/10 p-8 text-center">
           <h2
             id="families-title"
             className="text-3xl font-bold mb-3 text-primary-foreground"
@@ -173,42 +125,6 @@ function CommitmentFamilies() {
             education, and coordinated discharge planning.
           </p>
         </div>
-      </div>
-    </section>
-  );
-}
-
-function Continuum() {
-  return (
-    <section className="py-16 bg-[#212121]" aria-labelledby="continuum-title">
-      <div className={CONTAINER}>
-        <h2
-          id="continuum-title"
-          className="text-3xl font-bold mb-6 text-primary-foreground"
-        >
-          Continuum of Care
-        </h2>
-
-        <div className="flex flex-col gap-4 md:flex-row md:items-center md:gap-6">
-          {CONTINUUM_PATH.map((step, i) => (
-            <div key={step} className="flex items-center">
-              <span className="inline-flex h-8 w-8 items-center justify-center rounded-full bg-primary text-sm font-bold text-black">
-                {i + 1}
-              </span>
-              <span className="ml-3 font-medium text-white">{step}</span>
-              {i < CONTINUUM_PATH.length - 1 && (
-                <span className="hidden md:inline mx-4 text-primary-foreground">
-                  →
-                </span>
-              )}
-            </div>
-          ))}
-        </div>
-
-        <p className="text-primary-foreground mt-6">
-          We coordinate with referring providers and guide families through
-          every step.
-        </p>
       </div>
     </section>
   );
@@ -231,7 +147,7 @@ function Insurance() {
           </p>
         </div>
 
-        <div className="rounded-lg border border-primary/20 bg-[#212121]/10 p-6">
+        <div className="rounded-lg border border-primary/20 bg-[#c3dac6]/10 p-6">
           <p className="text-sm text-gray-700">
             Need help checking coverage? Call our admissions team—verification
             typically takes just a few minutes with the patient’s demographics,
@@ -245,14 +161,11 @@ function Insurance() {
 
 function WhyRefer() {
   return (
-    <section
-      className="py-20 bg-gradient-to-b from-[#212121] to-[#181818]"
-      aria-labelledby="why-title"
-    >
+    <section className="py-20 bg-primary" aria-labelledby="why-title">
       <div className="max-w-6xl mx-auto px-6">
         <h2
           id="why-title"
-          className="text-4xl font-bold tracking-wide text-center text-primary-foreground mb-12"
+          className="text-4xl font-bold tracking-wide text-center text-black mb-12"
         >
           Why Refer to Harmony Health?
         </h2>
@@ -260,9 +173,9 @@ function WhyRefer() {
           {WHY_REFER.map((text) => (
             <div
               key={text}
-              className="flex items-center justify-center text-center p-8 rounded-xl bg-[#2a2a2a] shadow-lg hover:shadow-xl transition"
+              className="flex items-center justify-center text-center p-8 rounded-xl bg-background-secondary border shadow-lg hover:shadow-xl transition"
             >
-              <p className="text-white text-lg leading-relaxed">{text}</p>
+              <p className="text-black text-lg leading-relaxed">{text}</p>
             </div>
           ))}
         </div>
