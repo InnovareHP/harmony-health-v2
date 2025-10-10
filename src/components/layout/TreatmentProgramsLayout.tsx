@@ -10,7 +10,7 @@ export default function StayInfoSection({ children }: Props) {
     },
     {
       title: "Intensive Outpatient",
-      href: "/treatment-programs/outpatient-programs",
+      href: "/treatment-programs/outpatient-program",
     },
     {
       title: "Interdisciplinary Team",
