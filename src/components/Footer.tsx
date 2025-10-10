@@ -48,16 +48,40 @@ export default function Footer() {
             </div>
             <div className="flex items-center gap-2">
               <Phone className="h-4 w-4" aria-hidden="true" />
+              Main Local:
               <a
-                href="tel:+18883910229"
+                href="tel:+18175293170"
                 className="hover:text-primary text-black"
               >
-                888-391-0229
+                +1 817 529 3170
               </a>
             </div>
             <div className="flex items-center gap-2">
               <Printer className="h-4 w-4" aria-hidden="true" />
-              <span className="text-black">412-706-9202</span>
+              Fax:
+              <span className="text-black">+1 817 529 3171</span>
+            </div>
+
+            <div className="flex items-center gap-2">
+              <Phone className="h-4 w-4" aria-hidden="true" />
+              Main Toll Free:
+              <a
+                href="tel:+18445706444"
+                className="hover:text-primary text-black"
+              >
+                +1 844 570 6444
+              </a>
+            </div>
+
+            <div className="flex items-center gap-2">
+              <Phone className="h-4 w-4" aria-hidden="true" />
+              24/7 Intake Assessment Hotline:
+              <a
+                href="tel:+18445707444"
+                className="hover:text-primary text-black"
+              >
+                +1 844 570 7444
+              </a>
             </div>
             <div className="flex items-center gap-2">
               <Mail className="h-4 w-4" aria-hidden="true" />

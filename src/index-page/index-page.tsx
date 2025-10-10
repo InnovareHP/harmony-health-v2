@@ -6,6 +6,7 @@ import {
   Mail,
   MapPin,
   Phone,
+  Printer,
 } from "lucide-react";
 
 // Crisis Banner Component
@@ -281,8 +282,39 @@ function ContactSection() {
                     <Phone className="w-6 h-6 text-primary" />
                   </div>
                   <div>
-                    <p className="font-semibold text-gray-900">Phone</p>
-                    <p className="text-gray-600">888-391-0229</p>
+                    <p className="font-semibold text-gray-900">Main Local</p>
+                    <p className="text-gray-600">+1 817 529 3170</p>
+                  </div>
+                </div>
+
+                <div className="flex items-center gap-4">
+                  <div className="bg-primary/10 p-3 rounded-lg">
+                    <Printer className="w-6 h-6 text-primary" />
+                  </div>
+                  <div>
+                    <p className="font-semibold text-gray-900">Fax</p>
+                    <p className="text-gray-600">+1 817 529 3171</p>
+                  </div>
+                </div>
+
+                <div className="flex items-center gap-4">
+                  <div className="bg-primary/10 p-3 rounded-lg">
+                    <Phone className="w-6 h-6 text-primary" />
+                  </div>
+                  <div>
+                    <p className="font-semibold text-gray-900">
+                      Main Toll Free
+                    </p>
+                    <p className="text-gray-600">+1 844 570 6444</p>
+                  </div>
+                </div>
+                <div className="flex items-center gap-4">
+                  <div className="bg-primary/10 p-3 rounded-lg">
+                    <Phone className="w-6 h-6 text-primary" />
+                  </div>
+                  <div>
+                    <p className="font-semibold text-gray-900">Hotline</p>
+                    <p className="text-gray-600">+1 817 529 3170</p>
                   </div>
                 </div>
 
