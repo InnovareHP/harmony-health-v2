@@ -11,7 +11,7 @@ const SERVE_ITEMS = [
 ] as const;
 
 const REFERRAL_STEPS: Array<[title: string, subtitle: string]> = [
-  ["Call Referral Line", "(XXX) XXX-XXXX"],
+  ["Call Referral Line", "Main Local: +1 817 529 3170"],
   ["Submit referral form", "Online, fax, or email"],
   ["Safe transfer coordination", "Our staff assists every step"],
   ["Admission & Family Support", "Families included from day one"],
@@ -197,16 +197,40 @@ function ReferralContact() {
 
         <div className="space-y-2 text-gray-800">
           <p>
-            <strong>Referral Line:</strong>{" "}
+            <strong>Main Local:</strong>{" "}
             <a
               className="text-primary-foreground  hover:underline"
-              href="tel:+1XXXXXXXXXX"
+              href="tel:+18175293170"
             >
-              (XXX) XXX-XXXX
+              +1 817 529 3170
             </a>
           </p>
           <p>
-            <strong>Fax:</strong> (XXX) XXX-XXXX
+            <strong>Fax:</strong>{" "}
+            <a
+              className="text-primary-foreground  hover:underline"
+              href="tel:+18175293171"
+            >
+              +1 817 529 3171
+            </a>
+          </p>
+          <p>
+            <strong>Main Toll Free:</strong>{" "}
+            <a
+              className="text-primary-foreground  hover:underline"
+              href="tel:+18445706444"
+            >
+              +1 844 570 6444
+            </a>
+          </p>
+          <p>
+            <strong>24/7 Intake Assessment Hotline:</strong>{" "}
+            <a
+              className="text-primary-foreground  hover:underline"
+              href="tel:+18445707444"
+            >
+              +1 844 570 7444
+            </a>
           </p>
           <p>
             <strong>Email:</strong>{" "}
