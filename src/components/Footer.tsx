@@ -3,14 +3,11 @@ import { MapPin, Phone, Printer } from "lucide-react";
 const resources = [
   { label: "HIPAA Privacy Practices", href: "/compliance" },
   { label: "Price Transparency", href: "/compliance" },
-  { label: "No Surprises Act", href: "/compliance" },
 ];
 
 const policies = [
-  { label: "Privacy Policy", href: "/compliance" },
-  { label: "Terms of Use", href: "/compliance" },
+  { label: "Medical Disclaimer", href: "/compliance" },
   { label: "Notice of Nondiscrimination", href: "/compliance" },
-  { label: "Accessibility Statement", href: "/compliance" },
 ];
 
 export default function Footer() {

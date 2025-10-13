@@ -13,8 +13,6 @@ const SERVE_ITEMS = [
 const REFERRAL_STEPS: Array<[title: string, subtitle: string]> = [
   ["Call Referral Line", "Main Local: +1 817 529 3170"],
   ["Submit referral form", "Online, fax, or email"],
-  ["Safe transfer coordination", "Our staff assists every step"],
-  ["Admission & Family Support", "Families included from day one"],
 ];
 
 const WHY_REFER = [
