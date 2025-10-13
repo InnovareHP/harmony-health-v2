@@ -51,12 +51,6 @@ function HeroSection() {
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <a
-              href="/referrals"
-              className="bg-primary hover:bg-primary/90 px-8 py-4 rounded-lg font-semibold transition-all duration-200 shadow-lg hover:shadow-xl"
-            >
-              Make a Referral
-            </a>
-            <a
               href="/treatment-programs"
               className="border-2 border-gray-300 hover:border-primary hover:text-primary px-8 py-4 rounded-lg text-white font-semibold transition-all duration-200 group"
             >
@@ -182,7 +176,7 @@ function AboutCareSection() {
 function WhyChooseUs() {
   const features = [
     "Specialized in geriatric psychiatry — not just general mental health",
-    "Accredited and licensed to meet the highest standards of safety and quality",
+    // "Accredited and licensed to meet the highest standards of safety and quality",
     "Expert interdisciplinary team of physicians, nurses, and therapists trained in senior care",
     "Family involvement at every step of treatment",
     "Continuum of care to support patients and caregivers beyond hospitalization",

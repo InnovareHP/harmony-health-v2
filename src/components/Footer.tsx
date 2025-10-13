@@ -1,4 +1,4 @@
-import { Facebook, Linkedin, Mail, MapPin, Phone, Printer } from "lucide-react";
+import { MapPin, Phone, Printer } from "lucide-react";
 
 const resources = [
   { label: "HIPAA Privacy Practices", href: "/compliance" },
@@ -83,7 +83,7 @@ export default function Footer() {
                 +1 844 570 7444
               </a>
             </div>
-            <div className="flex items-center gap-2">
+            {/* <div className="flex items-center gap-2">
               <Mail className="h-4 w-4" aria-hidden="true" />
               <a
                 href="mailto:info@harmonyhealth.org"
@@ -91,11 +91,11 @@ export default function Footer() {
               >
                 info@harmonyhealth.org
               </a>
-            </div>
+            </div> */}
           </address>
 
           {/* Social */}
-          <div className="mt-5 flex gap-3">
+          {/* <div className="mt-5 flex gap-3">
             <a
               href="#"
               aria-label="Facebook"
@@ -111,7 +111,7 @@ export default function Footer() {
             >
               <Linkedin className="h-4 w-4" />
             </a>
-          </div>
+          </div> */}
         </div>
 
         {/* Resources */}

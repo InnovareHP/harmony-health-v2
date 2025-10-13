@@ -1,17 +1,16 @@
 import { useState } from "react";
 
 const ContactUs = () => {
-  // Replace with your real address/phone/email
   const org = {
     name: "Harmony Health",
     street: "7001 Bryant Irvin Rd",
     cityStateZip: "Fort Worth, TX 76132",
-    phoneHuman: "1-888-391-0229",
-    fax: "412-706-9202",
-    email: "info@harmonyhealth.org",
-    // Used for the map + directions link
+    phoneHuman: "+1 817 529 3170", // Phone Number
+    mainLocal: "+1 817 529 3171", // Main Local
+    fax: "+1 844 570 6444", // Fax
+    mainTollFree: "+1 844 570 7441", // Main Toll Free
     mapQuery: encodeURIComponent(
-      "Harmony Health, [Street Address], [City, State ZIP]"
+      "Harmony Health, 7001 Bryant Irvin Rd, Fort Worth, TX 76132"
     ),
   };
 
@@ -20,7 +19,6 @@ const ContactUs = () => {
   const onSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     setStatus("submitting");
-    // TODO: wire up to your API / email service
     setTimeout(() => setStatus("sent"), 800);
   };
 
@@ -48,16 +46,20 @@ const ContactUs = () => {
 
             <dl className="mt-4 space-y-1 text-primary-foreground">
               <div>
-                <dt className="sr-only">Fax</dt>
-                <dd>Fax: {org.fax}</dd>
+                <dt className="sr-only">Phone</dt>
+                <dd>Phone: {org.phoneHuman}</dd>
               </div>
               <div>
-                <dt className="sr-only">Email</dt>
-                <dd>
-                  <a href={`mailto:${org.email}`} className="hover:underline">
-                    {org.email}
-                  </a>
-                </dd>
+                <dt className="sr-only">Main Local</dt>
+                <dd>Main Local: {org.mainLocal}</dd>
+              </div>
+              <div>
+                <dt className="sr-only">Main Toll Free</dt>
+                <dd>Main Toll Free: {org.mainTollFree}</dd>
+              </div>
+              <div>
+                <dt className="sr-only">Fax</dt>
+                <dd>Fax: {org.fax}</dd>
               </div>
             </dl>
           </div>

@@ -142,8 +142,7 @@ function Insurance() {
             Insurance & Coverage
           </h2>
           <p className="text-gray-700">
-            We accept Medicare, Medicaid, and most commercial insurance.
-            Benefits are verified quickly to avoid delays.
+            Pending Insurance acceptance, call for more information
           </p>
         </div>
 
@@ -197,34 +196,7 @@ function ReferralContact() {
 
         <div className="space-y-2 text-gray-800">
           <p>
-            <strong>Main Local:</strong>{" "}
-            <a
-              className="text-primary-foreground  hover:underline"
-              href="tel:+18175293170"
-            >
-              +1 817 529 3170
-            </a>
-          </p>
-          <p>
-            <strong>Fax:</strong>{" "}
-            <a
-              className="text-primary-foreground  hover:underline"
-              href="tel:+18175293171"
-            >
-              +1 817 529 3171
-            </a>
-          </p>
-          <p>
-            <strong>Main Toll Free:</strong>{" "}
-            <a
-              className="text-primary-foreground  hover:underline"
-              href="tel:+18445706444"
-            >
-              +1 844 570 6444
-            </a>
-          </p>
-          <p>
-            <strong>24/7 Intake Assessment Hotline:</strong>{" "}
+            <strong>Referral Contact:</strong>{" "}
             <a
               className="text-primary-foreground  hover:underline"
               href="tel:+18445707444"
@@ -232,40 +204,15 @@ function ReferralContact() {
               +1 844 570 7444
             </a>
           </p>
-          <p>
-            <strong>Email:</strong>{" "}
-            <a
-              className="text-primary-foreground  hover:underline"
-              href="mailto:referrals@harmonyhealth.org"
-            >
-              referrals@harmonyhealth.org
-            </a>
-          </p>
-          <p>
-            <strong>Online Referral Form:</strong>{" "}
-            <a
-              className="text-primary-foreground  hover:underline"
-              href="/referral-form"
-            >
-              Start a referral
-            </a>
-          </p>
         </div>
 
         <div className="mt-6 flex flex-col sm:flex-row gap-3 justify-center">
           <a
-            href="tel:+1XXXXXXXXXX"
+            href="tel:+18445707444"
             className="px-6 py-3 rounded bg-primary hover:bg-primary/90 transition-colors"
-            aria-label="Call the referral line now"
+            aria-label="Call the 24/7 Intake Assessment Hotline now"
           >
             Call Now
-          </a>
-          <a
-            href="/referral-form"
-            className="px-6 py-3 rounded border border-primary text-primary hover:bg-primary/10 transition-colors"
-            aria-label="Open online referral form"
-          >
-            Submit Online
           </a>
         </div>
       </div>
