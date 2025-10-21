@@ -57,9 +57,21 @@ export default function TreatmentPrograms() {
 
 function Continuum() {
   const CONTINUUM_PATH = [
-    "Inpatient stabilization",
-    "Intensive Outpatient programs",
-    "Outpatient therapy / community resources",
+    {
+      title: "Inpatient Stabilization",
+      description:
+        "Our inpatient program provides 24/7 supervised care in a secure and therapeutic setting. Here, patients receive immediate evaluation, medication management, and structured therapy to stabilize acute psychiatric symptoms. This environment ensures safety, support, and preparation for continued recovery.",
+    },
+    {
+      title: "Intensive Outpatient Programs",
+      description:
+        "Following stabilization, patients may transition into our Intensive Outpatient Program (IOP), which offers structured therapy while allowing them to live at home. The IOP includes group and individual sessions that focus on coping strategies, relapse prevention, and reintegration into daily life—all while maintaining consistent therapeutic support.",
+    },
+    {
+      title: "Outpatient Therapy / Community Resources",
+      description:
+        "As patients continue their recovery journey, we connect them with ongoing outpatient therapy and trusted community resources. These services help sustain progress, encourage independence, and provide access to long-term counseling, support groups, and wellness programs designed for lasting stability.",
+    },
   ] as const;
 
   const CONTAINER = "max-w-6xl mx-auto px-6";
@@ -78,7 +90,7 @@ function Continuum() {
         <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
           {CONTINUUM_PATH.map((step, i) => (
             <div
-              key={step}
+              key={step.title}
               className="bg-background-secondary rounded-xl shadow-md p-6 flex flex-col items-center text-center border border-gray-200 hover:shadow-lg transition duration-200"
             >
               {/* Step number */}
@@ -86,15 +98,23 @@ function Continuum() {
                 {i + 1}
               </div>
 
-              {/* Step text */}
-              <p className="text-gray-800 font-medium">{step}</p>
+              {/* Step title */}
+              <p className="text-gray-900 font-semibold text-lg mb-2">
+                {step.title}
+              </p>
+
+              {/* Step description */}
+              <p className="text-gray-700 text-sm leading-relaxed">
+                {step.description}
+              </p>
             </div>
           ))}
         </div>
 
         <p className="text-black mt-12 text-center max-w-xl mx-auto">
           We coordinate with referring providers and guide families through
-          every step.
+          every step of care—ensuring a seamless and compassionate transition
+          from hospitalization to community wellness.
         </p>
       </div>
     </section>

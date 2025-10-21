@@ -1,18 +1,13 @@
-/* ReferralsPage.tsx */
+"use client";
+
+import { Button } from "@/components/ui/button";
+import { useState } from "react";
 
 const CONTAINER = "max-w-6xl mx-auto px-6";
 
-const SERVE_ITEMS = [
-  "Dementia-related behaviors",
-  "Acute psychiatric symptoms",
-  "Suicidal or harmful thoughts",
-  "Aggression or confusion",
-  "Complex co-occurring medical and psychiatric needs",
-] as const;
-
 const REFERRAL_STEPS: Array<[title: string, subtitle: string]> = [
   ["Call Referral Line", "Main Local: +1 817 529 3170"],
-  ["Submit referral form", "Online, fax, or email"],
+  ["Submit referral form", "Online, fax, or email below"],
 ];
 
 const WHY_REFER = [
@@ -39,13 +34,8 @@ export default function ReferralsPage() {
 
 function ReferralHero() {
   return (
-    <section
-      role="banner"
-      aria-label="Partnering with Providers"
-      className="relative"
-    >
+    <section role="banner" className="relative">
       <div className="relative h-[50vh] md:h-[60vh] overflow-hidden">
-        {/* Real image for better LCP + decoding */}
         <img
           src="/images/referral_process.jpg"
           alt="Clipboard and stethoscope symbolizing referrals"
@@ -55,7 +45,6 @@ function ReferralHero() {
           fetchPriority="high"
         />
         <div className="absolute inset-0 bg-black/45" />
-
         <div
           className={`${CONTAINER} relative text-white flex h-full items-center`}
         >
@@ -78,27 +67,55 @@ function ReferralHero() {
   );
 }
 
+/* ======================= REFERRAL PROCESS ======================= */
 function ReferralProcess() {
+  const [form, setForm] = useState({
+    name: "",
+    facility: "",
+    phone: "",
+    email: "",
+    notes: "",
+  });
+
   return (
     <section className="py-16 bg-primary" aria-labelledby="process-title">
       <div className={CONTAINER}>
         <h2 id="process-title" className="text-3xl font-bold mb-8 text-black">
           Referral Process
         </h2>
+
         <ol
-          className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6"
+          className="grid sm:grid-cols-2 lg:grid-cols-2 gap-6"
           aria-label="Steps"
         >
           {REFERRAL_STEPS.map(([title, subtitle], idx) => (
             <li
               key={title}
-              className="bg-background-secondary rounded-lg border p-5 shadow-sm"
+              className="bg-background-secondary rounded-lg border p-5 shadow-sm relative"
             >
               <div className="inline-flex h-8 w-8 items-center justify-center rounded-full bg-primary-foreground text-black text-sm font-bold">
                 {idx + 1}
               </div>
               <h3 className="font-semibold mt-3">{title}</h3>
               <p className="text-gray-600 text-sm mt-1">{subtitle}</p>
+
+              {/* Step 2: Show Referral Form */}
+              {title === "Submit referral form" && (
+                <div className="mt-4">
+                  <a
+                    href="https://form.jotform.com/252934911364056"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <Button
+                      type="submit"
+                      className="w-full bg-primary-foreground text-black hover:bg-primary-foreground/90"
+                    >
+                      Submit a Referral
+                    </Button>
+                  </a>
+                </div>
+              )}
             </li>
           ))}
         </ol>
@@ -107,6 +124,7 @@ function ReferralProcess() {
   );
 }
 
+/* ======================= COMMITMENT ======================= */
 function CommitmentFamilies() {
   return (
     <section className="py-16 bg-white" aria-labelledby="families-title">
@@ -128,6 +146,7 @@ function CommitmentFamilies() {
   );
 }
 
+/* ======================= INSURANCE ======================= */
 function Insurance() {
   return (
     <section className="py-16 bg-white" aria-labelledby="insurance-title">
@@ -140,7 +159,7 @@ function Insurance() {
             Insurance & Coverage
           </h2>
           <p className="text-gray-700">
-            Pending Insurance acceptance, call for more information
+            Pending Insurance acceptance, call for more information.
           </p>
         </div>
 
@@ -156,6 +175,7 @@ function Insurance() {
   );
 }
 
+/* ======================= WHY REFER ======================= */
 function WhyRefer() {
   return (
     <section className="py-20 bg-primary" aria-labelledby="why-title">
@@ -166,7 +186,7 @@ function WhyRefer() {
         >
           Why Refer to Harmony Health?
         </h2>
-        <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
+        <div className="grid gap-8 sm:grid-cols-2">
           {WHY_REFER.map((text) => (
             <div
               key={text}
@@ -181,6 +201,7 @@ function WhyRefer() {
   );
 }
 
+/* ======================= CONTACT ======================= */
 function ReferralContact() {
   return (
     <section className="py-16 bg-white" aria-labelledby="contact-title">
@@ -196,7 +217,7 @@ function ReferralContact() {
           <p>
             <strong>Referral Contact:</strong>{" "}
             <a
-              className="text-primary-foreground  hover:underline"
+              className="text-primary-foreground hover:underline"
               href="tel:+18445707444"
             >
               +1 844 570 7444
@@ -208,7 +229,6 @@ function ReferralContact() {
           <a
             href="tel:+18445707444"
             className="px-6 py-3 rounded bg-primary hover:bg-primary/90 transition-colors"
-            aria-label="Call the 24/7 Intake Assessment Hotline now"
           >
             Call Now
           </a>

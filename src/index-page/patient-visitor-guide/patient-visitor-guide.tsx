@@ -20,7 +20,7 @@ export default function PatientVisitorGuide() {
     },
     {
       title: "Discharge & Follow-Up",
-      href: "/patient-visitor-guide/discharge-and-follow-up",
+      href: "/patient-visitor-guide/discharge-follow-up",
       description:
         "Transition planning for home or another care setting, family education, follow-up appointments, community resource referrals.",
     },

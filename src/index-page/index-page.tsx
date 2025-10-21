@@ -45,10 +45,16 @@ function HeroSection() {
             Compassionate Psychiatric Care for
             <span className="text-primary"> Seniors</span>
           </h1>
-          <p className="text-xl text-gray-200 mb-8 leading-relaxed">
+          <p className="text-xl text-gray-200 mb-4 leading-relaxed">
             Helping older adults and their families find safety, healing, and
             hope in Harmony
           </p>
+
+          {/* Referral Phone Number */}
+          <p className="text-3xl md:text-4xl font-bold text-green-400 mb-8">
+            Referral Line: (555) 123-4567
+          </p>
+
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <a
               href="/treatment-programs"
@@ -230,6 +236,12 @@ function ProviderStrip() {
           className="bg-[#71ae83] px-8 py-4 rounded-lg font-semibold transition-all duration-200 shadow-lg hover:shadow-xl"
         >
           Refer a Patient
+        </a>
+        <a
+          href="https://form.jotform.com/252934911364056"
+          className="bg-[#71ae83] px-8 py-4 rounded-lg font-semibold transition-all duration-200 shadow-lg hover:shadow-xl"
+        >
+          Submit a partnership request{" "}
         </a>
       </div>
     </section>

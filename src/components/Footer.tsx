@@ -1,8 +1,11 @@
 import { MapPin, Phone, Printer } from "lucide-react";
 
 const resources = [
+  { label: "Language Assistance Services", href: "/language-assistance" },
   { label: "HIPAA Privacy Practices", href: "/compliance" },
   { label: "Price Transparency", href: "/compliance" },
+  { label: "Terms of Use", href: "/compliance" },
+  { label: "Privacy Policy", href: "/compliance" },
 ];
 
 const policies = [
@@ -43,6 +46,7 @@ export default function Footer() {
                 7001 Bryant Irvin Rd Fort Worth, TX 76132
               </span>
             </div>
+
             <div className="flex items-center gap-2">
               <Phone className="h-4 w-4" aria-hidden="true" />
               Main Local:
@@ -53,6 +57,7 @@ export default function Footer() {
                 +1 817 529 3170
               </a>
             </div>
+
             <div className="flex items-center gap-2">
               <Printer className="h-4 w-4" aria-hidden="true" />
               Fax:
@@ -80,38 +85,22 @@ export default function Footer() {
                 +1 844 570 7444
               </a>
             </div>
-            {/* <div className="flex items-center gap-2">
-              <Mail className="h-4 w-4" aria-hidden="true" />
+
+            {/* Language Assistance Line */}
+            <div className="flex items-center gap-2">
+              <Phone className="h-4 w-4" aria-hidden="true" />
+              Language Assistance:
               <a
-                href="mailto:info@harmonyhealth.org"
+                href="tel:+18445708444"
                 className="hover:text-primary text-black"
               >
-                info@harmonyhealth.org
+                +1 844 570 8444
               </a>
-            </div> */}
+            </div>
           </address>
-
-          {/* Social */}
-          {/* <div className="mt-5 flex gap-3">
-            <a
-              href="#"
-              aria-label="Facebook"
-              className="rounded-full border px-3 py-2 hover:border-primary hover:text-primary text-primary-foreground"
-            >
-              <Facebook className="h-4 w-4" />
-            </a>
-
-            <a
-              href="#"
-              aria-label="LinkedIn"
-              className="rounded-full border px-3 py-2 hover:border-primary hover:text-primary text-primary-foreground"
-            >
-              <Linkedin className="h-4 w-4" />
-            </a>
-          </div> */}
         </div>
 
-        {/* Resources */}
+        {/* Patient Resources */}
         <nav aria-labelledby="footer-resources">
           <h3
             id="footer-resources"
@@ -133,7 +122,7 @@ export default function Footer() {
           </ul>
         </nav>
 
-        {/* Policies */}
+        {/* Policies & Notices */}
         <nav aria-labelledby="footer-policies">
           <h3
             id="footer-policies"
@@ -146,7 +135,7 @@ export default function Footer() {
               <li key={l.label}>
                 <a
                   href={l.href}
-                  className="inline-flex items-center text-/80 hover:text-primary"
+                  className="inline-flex items-center hover:text-primary text-black"
                 >
                   {l.label}
                 </a>
@@ -154,8 +143,6 @@ export default function Footer() {
             ))}
           </ul>
         </nav>
-
-        {/* Newsletter */}
       </div>
 
       {/* Bottom bar */}

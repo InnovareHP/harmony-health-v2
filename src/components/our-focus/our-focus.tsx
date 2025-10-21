@@ -35,14 +35,22 @@ const OurFocus = () => {
             multidisciplinary team.
           </p>
 
+          {/* Updated Who We Serve Section */}
           <h2 className="text-xl font-semibold text-primary mt-8 mb-4">
             Who We Serve
           </h2>
+          <p className="text-gray-800 mb-4">
+            We specialize in psychiatric care for adults 55+ originating from
+            hospitals, long-term care facilities, assisted living facilities,
+            skilled nursing facilities, emergency room departments, physicians,
+            and home and community organizations.
+          </p>
           <p className="text-gray-800 mb-4">
             We care for older adults experiencing symptoms such as confusion,
             aggression, hallucinations, suicidal thoughts, or withdrawal.
           </p>
 
+          {/* Conditions We Treat Section */}
           <h2 className="text-xl font-semibold text-primary mt-8 mb-4">
             Conditions We Treat
           </h2>
@@ -58,7 +66,8 @@ const OurFocus = () => {
           </ul>
         </div>
       </section>
-      <WhoWeServe />
+
+      {/* Removed Common Referral Sources / WhoWeServe Component */}
     </div>
   );
 };
