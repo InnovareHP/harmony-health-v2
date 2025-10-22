@@ -231,18 +231,20 @@ function ProviderStrip() {
           managers to ensure safe, seamless transitions of care. Our admissions
           team is available 24/7.
         </p>
-        <a
-          href="/referrals"
-          className="bg-[#71ae83] px-8 py-4 rounded-lg font-semibold transition-all duration-200 shadow-lg hover:shadow-xl"
-        >
-          Refer a Patient
-        </a>
-        <a
-          href="https://form.jotform.com/252934911364056"
-          className="bg-[#71ae83] px-8 py-4 rounded-lg font-semibold transition-all duration-200 shadow-lg hover:shadow-xl"
-        >
-          Submit a partnership request{" "}
-        </a>
+        <div className="flex justify-center gap-4">
+          <a
+            href="/referrals"
+            className="bg-white px-8 py-4 rounded-lg font-semibold transition-all duration-200 shadow-lg hover:shadow-xl"
+          >
+            Refer a Patient
+          </a>
+          <a
+            href="https://form.jotform.com/252934911364056"
+            className="bg-white px-8 py-4 rounded-lg font-semibold transition-all duration-200 shadow-lg hover:shadow-xl"
+          >
+            Submit a partnership request{" "}
+          </a>
+        </div>
       </div>
     </section>
   );
