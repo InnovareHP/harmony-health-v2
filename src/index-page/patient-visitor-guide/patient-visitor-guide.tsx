@@ -22,7 +22,13 @@ export default function PatientVisitorGuide() {
       title: "Discharge & Follow-Up",
       href: "/patient-visitor-guide/discharge-follow-up",
       description:
-        "Transition planning for home or another care setting, family education, follow-up appointments, community resource referrals.",
+        "Transition planning for home or another care setting, family education, follow-up appointments, and community resource referrals.",
+    },
+    {
+      title: "Frequently Asked Questions (FAQs)",
+      href: "/patient-visitor-guide/faqs",
+      description:
+        "Find answers about inpatient hospitalization, treatment, recovery, and the Intensive Outpatient Program (IOP).",
     },
   ];
 
@@ -30,7 +36,7 @@ export default function PatientVisitorGuide() {
     <section className="bg-white py-16 px-6 md:px-12">
       <div className="max-w-7xl mx-auto text-center">
         <h2 className="text-3xl md:text-4xl font-bold text-primary-foreground mb-4">
-          Patient Visitor Guide
+          Patient & Visitor Guide
         </h2>
         <p className="text-gray-600 max-w-2xl mx-auto mb-12">
           Helping you and your family feel informed, supported, and comfortable

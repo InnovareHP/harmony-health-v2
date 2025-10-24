@@ -7,7 +7,6 @@ const CONTAINER = "max-w-6xl mx-auto px-6";
 
 const REFERRAL_STEPS: Array<[title: string, subtitle: string]> = [
   ["Call Referral Line", "Main Local: +1 817 529 3170"],
-  ["Submit referral form", "Online, fax, or email below"],
 ];
 
 const WHY_REFER = [
@@ -84,10 +83,7 @@ function ReferralProcess() {
           Referral Process
         </h2>
 
-        <ol
-          className="grid sm:grid-cols-2 lg:grid-cols-2 gap-6"
-          aria-label="Steps"
-        >
+        <ol className="grid sm:grid-cols gap-6" aria-label="Steps">
           {REFERRAL_STEPS.map(([title, subtitle], idx) => (
             <li
               key={title}
@@ -221,6 +217,16 @@ function ReferralContact() {
               href="tel:+18445707444"
             >
               +1 844 570 7444
+            </a>
+          </p>
+
+          <p>
+            <strong>Email:</strong>{" "}
+            <a
+              className="text-primary-foreground hover:underline"
+              href="mailto:contact@harmonyfortworth.com"
+            >
+              contact@harmonyfortworth.com
             </a>
           </p>
         </div>

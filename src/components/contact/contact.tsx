@@ -9,9 +9,11 @@ const ContactUs = () => {
     mainLocal: "+1 817 529 3171",
     fax: "+1 844 570 6444",
     mainTollFree: "+1 844 570 7441",
+    // ✅ Updated map query to target Harmony Health, Fort Worth directly
     mapQuery: encodeURIComponent(
-      "Harmony Health, 7001 Bryant Irvin Rd, Fort Worth, TX 76132"
+      "Harmony Health Fort Worth, 7001 Bryant Irvin Rd, Fort Worth, TX 76132"
     ),
+    email: "contact@harmonyfortworth.com",
   };
 
   const [status, setStatus] = useState<"idle" | "submitting" | "sent">("idle");
@@ -46,7 +48,7 @@ const ContactUs = () => {
               <div>
                 <dt className="sr-only">Phone</dt>
                 <dd>
-                  📞 <strong>Phone:</strong>{" "}
+                  <strong>Phone:</strong>{" "}
                   <a
                     href={`tel:${org.phoneHuman}`}
                     className="text-blue-700 hover:underline"
@@ -58,7 +60,7 @@ const ContactUs = () => {
               <div>
                 <dt className="sr-only">Main Local</dt>
                 <dd>
-                  ☎️ <strong>Main Local:</strong>{" "}
+                  <strong>Main Local:</strong>{" "}
                   <a
                     href={`tel:${org.mainLocal}`}
                     className="text-blue-700 hover:underline"
@@ -70,7 +72,7 @@ const ContactUs = () => {
               <div>
                 <dt className="sr-only">Main Toll Free</dt>
                 <dd>
-                  📞 <strong>Main Toll Free:</strong>{" "}
+                  <strong>Main Toll Free:</strong>{" "}
                   <a
                     href={`tel:${org.mainTollFree}`}
                     className="text-blue-700 hover:underline"
@@ -79,10 +81,23 @@ const ContactUs = () => {
                   </a>
                 </dd>
               </div>
+
+              <div>
+                <dt className="sr-only">Email</dt>
+                <dd>
+                  <strong>Email:</strong>{" "}
+                  <a
+                    href={`mailto:${org.email}`}
+                    className="text-blue-700 hover:underline"
+                  >
+                    {org.email}
+                  </a>
+                </dd>
+              </div>
               <div>
                 <dt className="sr-only">Fax</dt>
                 <dd>
-                  🖨️ <strong>Fax:</strong> {org.fax}
+                  <strong>Fax:</strong> {org.fax}
                 </dd>
               </div>
             </dl>
@@ -93,24 +108,25 @@ const ContactUs = () => {
         <aside className="space-y-4">
           <h2 className="text-2xl font-semibold text-primary mb-2">Map</h2>
 
-          {/* ✅ Added 'q=Harmony Health Fort Worth TX' so the map displays the label */}
+          {/* ✅ Smaller map height and verified Harmony Health query */}
           <div className="rounded-xl overflow-hidden border border-gray-300 shadow-md">
             <iframe
               title="Harmony Health Location"
               src={`https://www.google.com/maps?q=${org.mapQuery}&output=embed&z=15&hl=en`}
-              className="w-full h-80 md:h-96"
+              className="w-full h-64 md:h-72" // ✅ Smaller map (was h-80/h-96)
               loading="lazy"
               referrerPolicy="no-referrer-when-downgrade"
             />
           </div>
 
+          {/* ✅ Corrected Directions Link */}
           <a
             href={`https://www.google.com/maps/dir/?api=1&destination=${org.mapQuery}`}
             target="_blank"
             rel="noopener noreferrer"
             className="inline-block text-lg text-blue-600 hover:underline font-medium"
           >
-            📍 Click for directions
+            📍 Click for directions to Harmony Health
           </a>
         </aside>
       </main>

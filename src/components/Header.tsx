@@ -69,6 +69,15 @@ function NavLinks() {
       <a href="/resources" className="hover:text-primary">
         Resources
       </a>
+      <div className="flex items-center gap-2">
+        Main Local:
+        <a
+          href="tel:+18175293170"
+          className="hover:text-primary text-primary-foreground"
+        >
+          +1 817 529 3170
+        </a>
+      </div>
     </>
   );
 }

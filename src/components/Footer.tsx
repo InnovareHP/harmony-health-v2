@@ -1,4 +1,4 @@
-import { MapPin, Phone, Printer } from "lucide-react";
+import { Mail, MapPin, Phone, Printer } from "lucide-react";
 
 const resources = [
   { label: "Language Assistance Services", href: "/language-assistance" },
@@ -95,6 +95,17 @@ export default function Footer() {
                 className="hover:text-primary text-black"
               >
                 +1 844 570 8444
+              </a>
+            </div>
+
+            <div className="flex items-center gap-2">
+              <Mail className="h-4 w-4" aria-hidden="true" />
+              Email:
+              <a
+                href="mailto:contact@harmonyfortworth.com"
+                className="hover:text-primary text-black"
+              >
+                contact@harmonyfortworth.com
               </a>
             </div>
           </address>

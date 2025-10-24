@@ -1,5 +1,6 @@
 import DischargeToFacility from "@/src/components/patient-visitor-page/discharge-and-follow-up";
 import DuringYourStay from "@/src/components/patient-visitor-page/during-your-stay";
+import FAQsPage from "@/src/components/patient-visitor-page/faq";
 import PreparingYourStay from "@/src/components/patient-visitor-page/preparing-your-stay";
 import Visitation from "@/src/components/patient-visitor-page/visitation";
 
@@ -22,6 +23,9 @@ const Guides = ({ guide }: Props) => {
 
   if (guide === "discharge-follow-up") {
     return <DischargeToFacility />;
+  }
+  if (guide === "faqs") {
+    return <FAQsPage />;
   }
 };
 
