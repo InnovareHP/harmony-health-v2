@@ -2,10 +2,10 @@ const OutpatientPrograms = () => {
   return (
     <div className="bg-background-secondary/20 p-6 rounded-lg shadow-sm">
       <p className="text-gray-800 mb-4">
-        Outpatient programs for adults at Three Rivers Behavioral Health are
-        designed for individuals who may benefit from treatment in a less
-        restrictive environment than inpatient hospitalization, allowing them to
-        return home between programming hours.
+        Outpatient programs for adults at Harmony Health are designed for
+        individuals who may benefit from treatment in a less restrictive
+        environment than inpatient hospitalization, allowing them to return home
+        between programming hours.
       </p>
 
       <p className="text-gray-800 mb-4">
@@ -13,8 +13,9 @@ const OutpatientPrograms = () => {
         <span className="font-semibold">
           Adult Partial Hospitalization Program (PHP)
         </span>
-        at Three Rivers serves patients ages 18 and older who need a structured
-        therapeutic program but do not require 24-hour continuous care.
+        at Harmony Health serves patients ages 55 years and older who need a
+        structured therapeutic program but do not require 24-hour continuous
+        care.
       </p>
 
       <p className="text-gray-800 mb-4">
@@ -22,7 +23,7 @@ const OutpatientPrograms = () => {
         <span className="font-semibold">
           Adult Psychiatric Intensive Outpatient Program (IOP)
         </span>
-        is for adults ages 18 and older who require intensive psychiatric
+        is for adults ages 55 years and older who require intensive psychiatric
         treatment while maintaining the ability to return home between sessions.
         A <span className="italic">Virtual IOP</span> option is also available
         for those who prefer or require remote participation.
@@ -33,7 +34,7 @@ const OutpatientPrograms = () => {
         <span className="font-semibold">
           Adult Chemical Dependency Outpatient Program
         </span>
-        is designed for patients ages 18 and older who are struggling with
+        is designed for patients ages 55 years and older who are struggling with
         chemical dependency or substance abuse issues, but who do not require
         medical detoxification or inpatient rehabilitation.
       </p>
