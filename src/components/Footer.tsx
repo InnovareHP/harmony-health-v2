@@ -6,6 +6,7 @@ const resources = [
   { label: "Price Transparency", href: "/compliance" },
   { label: "Terms of Use", href: "/compliance" },
   { label: "Privacy Policy", href: "/compliance" },
+  { label: "Brochure", href: "/brochure" },
 ];
 
 const policies = [
