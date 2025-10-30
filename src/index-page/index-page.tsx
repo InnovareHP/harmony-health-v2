@@ -52,7 +52,7 @@ function HeroSection() {
 
           {/* Referral Phone Number */}
           <p className="text-3xl md:text-4xl font-bold text-green-400 mb-8">
-            Referral Line: (555) 123-4567
+            Referral Line: 844-570-7444
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
