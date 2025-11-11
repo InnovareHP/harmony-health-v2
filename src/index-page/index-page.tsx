@@ -52,7 +52,8 @@ function HeroSection() {
 
           {/* Referral Phone Number */}
           <p className="text-3xl md:text-4xl font-bold text-green-400 mb-8">
-            Referral Line:<br className="md:hidden" /> 844-570-7444
+            Referral Line:
+            <br className="md:hidden" /> 844-570-7444
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
@@ -332,7 +333,9 @@ function ContactSection() {
                   </div>
                   <div>
                     <p className="font-semibold text-gray-900">Email</p>
-                    <p className="text-gray-600">info@harmonyhealth.org</p>
+                    <p className="text-gray-600">
+                      contact@harmonyfortworth.com
+                    </p>
                   </div>
                 </div>
               </div>
