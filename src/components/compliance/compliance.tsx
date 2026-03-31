@@ -102,7 +102,7 @@ const ComplianceLegalPolicies = () => {
                     <td className="px-4 py-2">
                       Adult/Geriatric Daily Room and Board
                     </td>
-                    <td className="px-4 py-2">$2,100.00</td>
+                    <td className="px-4 py-2">$2,250.00</td>
                     <td className="px-4 py-2">$820.86</td>
                     <td className="px-4 py-2">$941.11</td>
                     <td className="px-4 py-2">$866.49</td>
