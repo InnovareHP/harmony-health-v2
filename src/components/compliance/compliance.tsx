@@ -81,37 +81,63 @@ const ComplianceLegalPolicies = () => {
               regarding your bill.
             </p>
 
-            <div className="overflow-x-auto rounded-lg border border-gray-300 shadow-sm">
-              <table className="min-w-full text-sm text-left text-gray-800">
-                <thead className="bg-gray-100 text-gray-700 font-semibold">
-                  <tr>
-                    <th className="px-4 py-2">Service Description</th>
-                    <th className="px-4 py-2">Charge</th>
-                    <th className="px-4 py-2">Aetna Rate</th>
-                    <th className="px-4 py-2">Anthem Medicare Rate</th>
-                    <th className="px-4 py-2">
-                      Humana Medicare Replacement Rate
-                    </th>
-                    <th className="px-4 py-2">IN Medicaid HP Medicaid Rate</th>
-                    <th className="px-4 py-2">Optum Behavioral Health Rate</th>
-                    <th className="px-4 py-2">Medicare Rate</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr className="border-t">
-                    <td className="px-4 py-2">
-                      Adult/Geriatric Daily Room and Board
-                    </td>
-                    <td className="px-4 py-2">$2,250.00</td>
-                    <td className="px-4 py-2">$820.86</td>
-                    <td className="px-4 py-2">$941.11</td>
-                    <td className="px-4 py-2">$866.49</td>
-                    <td className="px-4 py-2">$1,310.40</td>
-                    <td className="px-4 py-2">$822.75</td>
-                    <td className="px-4 py-2">$974.83</td>
-                  </tr>
-                </tbody>
-              </table>
+            <div className="space-y-4">
+              <div className="overflow-x-auto rounded-lg border border-gray-300 shadow-sm">
+                <table className="min-w-full text-sm text-left text-gray-800">
+                  <thead className="bg-gray-100 text-gray-700 font-semibold">
+                    <tr>
+                      <th className="px-4 py-2">Service Description</th>
+
+                      <th className="px-4 py-2">Charge</th>
+                      <th className="px-4 py-2">Aetna Rate</th>
+                      <th className="px-4 py-2">Anthem Medicare Rate</th>
+                      <th className="px-4 py-2">
+                        Humana Medicare Replacement Rate
+                      </th>
+                      <th className="px-4 py-2">
+                        IN Medicaid HP Medicaid Rate
+                      </th>
+                      <th className="px-4 py-2">
+                        Optum Behavioral Health Rate
+                      </th>
+                      <th className="px-4 py-2">Medicare Rate</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr className="border-t">
+                      <td className="px-4 py-2">
+                        Adult/Geriatric Daily Room and Board
+                      </td>
+                      <td className="px-4 py-2">$2,250.00</td>
+                      <td className="px-4 py-2">$820.86</td>
+                      <td className="px-4 py-2">$941.11</td>
+                      <td className="px-4 py-2">$866.49</td>
+                      <td className="px-4 py-2">$1,310.40</td>
+                      <td className="px-4 py-2">$822.75</td>
+                      <td className="px-4 py-2">$974.83</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+
+              <div className="overflow-x-auto rounded-lg border border-gray-300 shadow-sm">
+                <table className="min-w-full text-sm text-left text-gray-800">
+                  <thead className="bg-gray-100 text-gray-700 font-semibold">
+                    <tr>
+                      <th className="px-4 py-2">Service Description</th>
+                      <th className="px-4 py-2">Rev Code: 0124</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr className="border-t">
+                      <td className="px-4 py-2">
+                        Psych Semi-Private Room and Board All inclusive 
+                      </td>
+                      <td className="px-4 py-2">$2,250.00</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
             </div>
           </section>
 
