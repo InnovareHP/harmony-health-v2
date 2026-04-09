@@ -1,4 +1,4 @@
-import { Mail, MapPin, Phone, Printer } from "lucide-react";
+import { Facebook, Instagram, Linkedin, Mail, MapPin, Phone, Printer } from "lucide-react";
 
 const resources = [
   { label: "Language Assistance Services", href: "/language-assistance" },
@@ -110,6 +110,37 @@ export default function Footer() {
               </a>
             </div>
           </address>
+
+          {/* Social Media */}
+          <div className="mt-5 flex items-center gap-4">
+            <a
+              href="https://www.instagram.com/harmonyhealthfw?igsh=MThhODR6MGU0aHF1aQ=="
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Instagram"
+              className="text-black hover:text-primary"
+            >
+              <Instagram className="h-5 w-5" />
+            </a>
+            <a
+              href="https://www.facebook.com/share/1CXjCUa5Br/"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Facebook"
+              className="text-black hover:text-primary"
+            >
+              <Facebook className="h-5 w-5" />
+            </a>
+            <a
+              href="https://www.linkedin.com/company/harmonyfortworth/"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="LinkedIn"
+              className="text-black hover:text-primary"
+            >
+              <Linkedin className="h-5 w-5" />
+            </a>
+          </div>
         </div>
 
         {/* Patient Resources */}
