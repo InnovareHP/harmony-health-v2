@@ -323,7 +323,7 @@ function ContactSection() {
                   </div>
                   <div>
                     <p className="font-semibold text-gray-900">Hotline</p>
-                    <p className="text-gray-600">+1 817 529 3170</p>
+                    <p className="text-gray-600">+1 844 570 7444</p>
                   </div>
                 </div>
 
