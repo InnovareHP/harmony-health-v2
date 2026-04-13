@@ -23,9 +23,7 @@ const DialogMarket = () => {
             team, and a mission rooted in meaningful support.
           </p>
 
-          <p className="text-foreground font-bold">
-            Booking begins early 2026. Stay tuned!
-          </p>
+          <p className="text-foreground font-bold">Now Accepting Patients</p>
         </div>
       </DialogContent>
     </Dialog>
