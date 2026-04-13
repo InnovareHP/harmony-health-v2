@@ -4,12 +4,29 @@ import {
   DialogHeader,
   DialogTitle,
 } from "@/components/ui/dialog";
-import { useState } from "react";
+import { useEffect, useState } from "react";
+
+const STORAGE_KEY = "harmony:dialog-market-dismissed";
 
 const DialogMarket = () => {
-  const [open, setOpen] = useState(true);
+  const [open, setOpen] = useState(false);
+
+  useEffect(() => {
+    if (typeof window === "undefined") return;
+    if (sessionStorage.getItem(STORAGE_KEY) !== "1") {
+      setOpen(true);
+    }
+  }, []);
+
+  const handleOpenChange = (next: boolean) => {
+    setOpen(next);
+    if (!next && typeof window !== "undefined") {
+      sessionStorage.setItem(STORAGE_KEY, "1");
+    }
+  };
+
   return (
-    <Dialog open={open} onOpenChange={setOpen}>
+    <Dialog open={open} onOpenChange={handleOpenChange}>
       <DialogContent className="max-w-md text-center">
         <DialogHeader>
           <DialogTitle className="text-center">
