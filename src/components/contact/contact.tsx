@@ -5,10 +5,10 @@ const ContactUs = () => {
     name: "Harmony Health",
     street: "7001 Bryant Irvin Rd",
     cityStateZip: "Fort Worth, TX 76132",
-    phoneHuman: "+1 817 529 3170",
-    mainLocal: "+1 817 529 3171",
-    fax: "+1 844 570 6444",
-    mainTollFree: "+1 844 570 7441",
+    phoneHuman: "+1 844 570 7444",
+    mainLocal: "+1 817 529 3170",
+    fax: "+1 817 529 3171",
+    mainTollFree: "+1 844 570 6444",
     // ✅ Updated map query to target Harmony Health, Fort Worth directly
     mapQuery: encodeURIComponent(
       "Harmony Health Fort Worth, 7001 Bryant Irvin Rd, Fort Worth, TX 76132"
@@ -46,18 +46,6 @@ const ContactUs = () => {
 
             <dl className="mt-6 space-y-2 text-lg text-primary-foreground font-medium">
               <div>
-                <dt className="sr-only">Phone</dt>
-                <dd>
-                  <strong>Phone:</strong>{" "}
-                  <a
-                    href={`tel:${org.phoneHuman}`}
-                    className="text-blue-700 hover:underline"
-                  >
-                    {org.phoneHuman}
-                  </a>
-                </dd>
-              </div>
-              <div>
                 <dt className="sr-only">Main Local</dt>
                 <dd>
                   <strong>Main Local:</strong>{" "}
@@ -81,7 +69,18 @@ const ContactUs = () => {
                   </a>
                 </dd>
               </div>
-
+              <div>
+                <dt className="sr-only">Phone</dt>
+                <dd>
+                  <strong>Hotline:</strong>{" "}
+                  <a
+                    href={`tel:${org.phoneHuman}`}
+                    className="text-blue-700 hover:underline"
+                  >
+                    {org.phoneHuman}
+                  </a>
+                </dd>
+              </div>
               <div>
                 <dt className="sr-only">Email</dt>
                 <dd>
