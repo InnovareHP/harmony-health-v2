@@ -69,6 +69,9 @@ function NavLinks() {
       <a href="/resources" className="hover:text-primary">
         Resources
       </a>
+      <a href="/price-transparency" className="hover:text-primary">
+        Price Transparency
+      </a>
       <div className="flex items-center gap-2">
         Main Local:
         <a

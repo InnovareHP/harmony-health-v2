@@ -3,7 +3,7 @@ import { Facebook, Instagram, Linkedin, Mail, MapPin, Phone, Printer } from "luc
 const resources = [
   { label: "Language Assistance Services", href: "/language-assistance" },
   { label: "HIPAA Privacy Practices", href: "/compliance" },
-  { label: "Price Transparency", href: "/compliance" },
+  { label: "Price Transparency", href: "/price-transparency" },
   { label: "Terms of Use", href: "/compliance" },
   { label: "Privacy Policy", href: "/compliance" },
   { label: "Brochure", href: "/brochure" },

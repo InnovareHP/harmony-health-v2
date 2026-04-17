@@ -1,0 +1,11 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(cp \"/c/Users/lhani/Downloads/994229140_harmonyhealthfortworth_machine readable file.csv\" \"/c/Users/lhani/OneDrive/Desktop/ivorzero/ivorzero/harmony-health-v2/public/file/harmonyhealthfortworth-machine-readable-file.csv\")",
+      "Bash(cp \"/c/Users/lhani/Downloads/994229140_harmonyhealthfortworth_machine readable file.xlsx\" \"/c/Users/lhani/OneDrive/Desktop/ivorzero/ivorzero/harmony-health-v2/public/file/harmonyhealthfortworth-machine-readable-file.xlsx\")",
+      "Bash(cp \"/c/Users/lhani/Downloads/Harmony Health Fort Worth Shoppable Services 4.15.2026.xlsx\" \"/c/Users/lhani/OneDrive/Desktop/ivorzero/ivorzero/harmony-health-v2/public/file/harmony-health-fort-worth-shoppable-services.xlsx\")",
+      "Bash(node *)",
+      "Bash(npx astro *)"
+    ]
+  }
+}
