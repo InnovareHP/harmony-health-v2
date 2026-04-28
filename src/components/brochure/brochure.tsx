@@ -9,7 +9,7 @@ const Brochure = () => {
   const handleDownload = () => {
     const link = document.createElement("a");
     link.href = pdfUrl;
-    link.download = "Opal-and-Sage-Brochure.pdf";
+    link.download = "harmony_health.pdf";
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link);
@@ -30,7 +30,7 @@ const Brochure = () => {
           <iframe
             src={pdfUrl}
             className="w-full h-full"
-            title="Opal and Sage Care Services Brochure"
+            title="Harmony Health Forthworth Brochure"
           />
         </div>
 
