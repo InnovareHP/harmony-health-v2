@@ -65,19 +65,6 @@ const AboutUs = () => {
         </section>
 
         {/* Chief Medical Director Narrative */}
-        <section aria-labelledby="chief-message">
-          <h2
-            id="chief-message"
-            className="text-2xl font-semibold text-primary mb-3"
-          >
-            About Us from our Chief Medical Director
-          </h2>
-          <p className="text-gray-800 leading-relaxed italic bg-background-secondary/20 p-6">
-            A personal message and narrative statement from{" "}
-            <span className="font-semibold">Dr. Harmon, MD</span> will be shared
-            here next week.
-          </p>
-        </section>
 
         {/* Accreditation & Licensing (optional) */}
         {/* <section aria-labelledby="accreditation"> ... </section> */}
