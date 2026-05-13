@@ -21,20 +21,20 @@ export default function Header() {
         {/* Burger Icon */}
         <button
           onClick={toggleMenu}
-          className="md:hidden text-gray-700 focus:outline-none"
+          className="xl:hidden text-gray-700 focus:outline-none"
         >
           {isOpen ? <X size={28} /> : <Menu size={28} />}
         </button>
 
         {/* Desktop Navigation */}
-        <nav className="hidden md:flex space-x-6 text-sm font-medium text-gray-700">
+        <nav className="hidden xl:flex flex-wrap justify-end gap-x-4 gap-y-1 text-xs font-medium text-gray-700 max-w-3xl">
           <NavLinks />
         </nav>
       </div>
 
-      {/* Mobile Navigation */}
+      {/* Mobile/Tablet Navigation */}
       {isOpen && (
-        <div className="md:hidden px-6 pb-4">
+        <div className="xl:hidden px-6 pb-4">
           <nav className="flex flex-col space-y-3 text-sm font-medium text-gray-700">
             <NavLinks />
           </nav>
