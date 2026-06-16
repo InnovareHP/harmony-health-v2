@@ -4,7 +4,7 @@ import { Button } from "@/components/ui/button";
 import { Download } from "lucide-react";
 
 const Brochure = () => {
-  const pdfUrl = "/file/HH Brochure.pdf"; // path inside /public
+  const pdfUrl = "/file/Innovare HP Brochure_4958.pdf"; // path inside /public
 
   const handleDownload = () => {
     const link = document.createElement("a");
