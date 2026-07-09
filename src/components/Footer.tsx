@@ -9,7 +9,6 @@ import {
 } from "lucide-react";
 
 const resources = [
-  { label: "Language Assistance Services", href: "/language-assistance" },
   { label: "HIPAA Privacy Practices", href: "/compliance" },
   { label: "Price Transparency", href: "/price-transparency" },
   { label: "Terms of Use", href: "/compliance" },
