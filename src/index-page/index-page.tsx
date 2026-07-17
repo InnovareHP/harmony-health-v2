@@ -219,6 +219,26 @@ function WhyChooseUs() {
   );
 }
 
+// Accreditation Strip Component
+function AccreditationStrip() {
+  return (
+    <section className="py-12 px-6 md:px-12 bg-gray-50 border-y border-gray-100">
+      <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-center gap-12">
+        <img
+          src="/joint-commission.jpg"
+          alt="The Joint Commission National Quality Approval"
+          className="w-full md:w-1/2 h-auto object-contain"
+        />
+        <img
+          src="/joint-commission-2.jpg"
+          alt="The Joint Commission National Quality Approval"
+          className="w-full md:w-1/2 h-auto object-contain"
+        />
+      </div>
+    </section>
+  );
+}
+
 // Provider Strip Component
 function ProviderStrip() {
   return (
@@ -414,6 +434,7 @@ export default function IndexPage() {
       <ProgramsPreview />
       <AboutCareSection />
       <WhyChooseUs />
+      <AccreditationStrip />
       <ProviderStrip />
       <ContactSection />
       <ResourcesSection />
