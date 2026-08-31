@@ -72,14 +72,22 @@ function NavLinks() {
       <a href="/price-transparency" className="hover:text-primary">
         Price Transparency
       </a>
-      <div className="flex items-center gap-2">
-        Main Local:
+      <div className="flex gap-2 py-2">
         <a
-          href="tel:+18175293170"
-          className="hover:text-primary text-primary-foreground"
+          href="/book"
+          className="rounded-full bg-primary px-3 py-1 font-semibold text-white hover:opacity-90"
         >
-          +1 817 529 3170
+          Request Appointment
         </a>
+        <div className="flex items-center gap-2">
+          Main Local:
+          <a
+            href="tel:+18175293170"
+            className="hover:text-primary text-primary-foreground"
+          >
+            +1 817 529 3170
+          </a>
+        </div>
       </div>
     </>
   );

@@ -101,6 +101,22 @@ const ContactUs = () => {
               </div>
             </dl>
           </div>
+
+          <div className="rounded-2xl border border-gray-200 bg-white p-8 shadow-md">
+            <h2 className="text-2xl font-bold text-primary mb-2">
+              Rather send a request online?
+            </h2>
+            <p className="text-lg text-primary-foreground leading-relaxed mb-6">
+              Tell us your preferred day and time. Our intake team confirms within
+              one business day.
+            </p>
+            <a
+              href="/book"
+              className="inline-flex items-center justify-center rounded-xl bg-primary px-6 py-3 text-lg font-semibold text-white hover:opacity-90"
+            >
+              Request an Appointment
+            </a>
+          </div>
         </section>
 
         {/* RIGHT: Interactive Map */}

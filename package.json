@@ -1,12 +1,13 @@
 {
-    "name": "Three Rivers Behavioral Health",
+    "name": "harmony-health-v2",
     "type": "module",
     "version": "0.0.1",
     "scripts": {
         "dev": "astro dev",
         "build": "astro build",
         "preview": "astro preview",
-        "astro": "astro"
+        "astro": "astro",
+        "dev:netlify": "netlify dev"
     },
     "dependencies": {
         "@astrojs/mdx": "^4.3.4",
@@ -31,6 +32,10 @@
         "tailwindcss": "^4.1.3"
     },
     "devDependencies": {
-        "tw-animate-css": "^1.3.7"
-    }
+        "@netlify/functions": "^6.0.0",
+        "netlify-cli": "^27.4.1",
+        "tw-animate-css": "^1.3.7",
+        "vite": "^6.4.1"
+    },
+    "description": "Harmony Health — Fort Worth, TX. Astro site with Netlify function for appointment requests."
 }
