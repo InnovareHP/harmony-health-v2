@@ -11,6 +11,16 @@ const isIndexPage = pathname === "/";
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
 
+    <!-- Google tag (gtag.js) -->
+    <script is:inline async src="https://www.googletagmanager.com/gtag/js?id=G-5Z6NL2RG62"></script>
+    <script is:inline>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-5Z6NL2RG62');
+    </script>
+
     <!-- Title & Description -->
     <title>Harmony Health |  Compassionate Psychiatric Care for Seniors</title>
     <meta name="description" content="Helping older adults and their families find safety, healing, and hope in Harmony." />
