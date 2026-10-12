@@ -14,13 +14,15 @@ export default function Header() {
           <img
             src="/images/harmony-health-logo.png"
             alt="Harmony Health"
-            className="w-40 h-20"
+            className="w-40 h-20 object-contain"
           />
         </a>
 
         {/* Burger Icon */}
         <button
           onClick={toggleMenu}
+          aria-label={isOpen ? "Close menu" : "Open menu"}
+          aria-expanded={isOpen}
           className="xl:hidden text-gray-700 focus:outline-none"
         >
           {isOpen ? <X size={28} /> : <Menu size={28} />}

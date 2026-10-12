@@ -30,6 +30,8 @@ function HeroSection() {
       <div className="absolute inset-0 z-0">
         <img
           src="/banner/banner.webp"
+          srcSet="/banner/banner-828.webp 828w, /banner/banner.webp 1676w"
+          sizes="100vw"
           fetchPriority="high"
           alt="Hero background"
           className="w-full h-full object-cover"
@@ -60,7 +62,7 @@ function HeroSection() {
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <a
               href="/book/"
-              className="bg-primary hover:opacity-90 px-8 py-4 rounded-lg text-white font-semibold transition-all duration-200 group"
+              className="bg-primary hover:opacity-90 px-8 py-4 rounded-lg text-gray-900 font-semibold transition-all duration-200 group"
             >
               Request an Appointment
               <ChevronRight className="inline ml-2 w-4 h-4 group-hover:translate-x-1 transition-transform" />

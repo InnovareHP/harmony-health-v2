@@ -33,11 +33,11 @@ export default function Footer() {
             <img
               src="/images/harmony-health-logo.png"
               alt="Harmony Health"
-              className="w-40 h-20"
+              className="w-40 h-20 object-contain"
             />
           </a>
 
-          <p className="mt-3 text-sm text-neutral-500 dark:text-neutral-400">
+          <p className="mt-3 text-sm text-neutral-700 dark:text-neutral-400">
             Compassionate behavioral health services for seniors and families.
           </p>
 
@@ -45,7 +45,7 @@ export default function Footer() {
             itemProp="address"
             itemScope
             itemType="https://schema.org/PostalAddress"
-            className="not-italic mt-5 space-y-2 text-sm text-primary-foreground"
+            className="not-italic mt-5 space-y-2 text-sm text-neutral-800"
           >
             <div className="flex items-start gap-2">
               <MapPin className="mt-0.5 h-4 w-4" aria-hidden="true" />
@@ -153,7 +153,7 @@ export default function Footer() {
         <nav aria-labelledby="footer-resources">
           <h3
             id="footer-resources"
-            className="mb-3 text-sm font-semibold text-primary-foreground dark:text-neutral-100"
+            className="mb-3 text-sm font-semibold text-neutral-900 dark:text-neutral-100"
           >
             Patient Resources
           </h3>
@@ -175,7 +175,7 @@ export default function Footer() {
         <nav aria-labelledby="footer-policies">
           <h3
             id="footer-policies"
-            className="mb-3 text-sm font-semibold text-primary-foreground dark:text-neutral-100"
+            className="mb-3 text-sm font-semibold text-neutral-900 dark:text-neutral-100"
           >
             Policies & Notices
           </h3>
@@ -195,7 +195,7 @@ export default function Footer() {
       </div>
 
       {/* Bottom bar */}
-      <div className="border-t bg-[#c3dac6] px-6 py-5 text-center text-xs text-neutral-500 dark:border-neutral-800 dark:bg-neutral-900">
+      <div className="border-t bg-[#c3dac6] px-6 py-5 text-center text-xs text-neutral-700 dark:border-neutral-800 dark:bg-neutral-900">
         <p>© {new Date().getFullYear()} Harmony Health. All rights reserved.</p>
       </div>
     </footer>
