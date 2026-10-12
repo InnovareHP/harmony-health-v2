@@ -47,34 +47,34 @@ export default function Header() {
 function NavLinks() {
   return (
     <>
-      <a href="/our-focus" className="hover:text-primary">
+      <a href="/our-focus/" className="hover:text-primary">
         Our Focus
       </a>
 
-      <a href="/patient-visitor-guide" className="hover:text-primary">
+      <a href="/patient-visitor-guide/" className="hover:text-primary">
         Patient & Visitor Guide
       </a>
-      <a href="/treatment-programs" className="hover:text-primary">
+      <a href="/treatment-programs/" className="hover:text-primary">
         Treatment & services
       </a>
-      <a href="/referrals" className="hover:text-primary">
+      <a href="/referrals/" className="hover:text-primary">
         Referral Process
       </a>
-      <a href="/about-us" className="hover:text-primary">
+      <a href="/about-us/" className="hover:text-primary">
         About Us
       </a>
-      <a href="/contact" className="hover:text-primary">
+      <a href="/contact/" className="hover:text-primary">
         Contact
       </a>
-      <a href="/resources" className="hover:text-primary">
+      <a href="/resources/" className="hover:text-primary">
         Resources
       </a>
-      <a href="/price-transparency" className="hover:text-primary">
+      <a href="/price-transparency/" className="hover:text-primary">
         Price Transparency
       </a>
       <div className="flex gap-2 py-2">
         <a
-          href="/book"
+          href="/book/"
           className="rounded-full bg-primary px-3 py-1 font-semibold text-white hover:opacity-90"
         >
           Request Appointment

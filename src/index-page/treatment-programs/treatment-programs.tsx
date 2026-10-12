@@ -2,19 +2,19 @@ export default function TreatmentPrograms() {
   const items = [
     {
       title: "Inpatient Program",
-      href: "/treatment-programs/inpatient-program",
+      href: "/treatment-programs/inpatient-program/",
       description:
         "Provides 24/7 psychiatric and medical support for adults aged 55 years and older requiring stabilization. Focused on safety, dignity, and individualized care.",
     },
     {
       title: "Intensive Outpatient Program",
-      href: "/treatment-programs/outpatient-program",
+      href: "/treatment-programs/outpatient-program/",
       description:
         "Structured therapy for adults and seniors needing support but not full hospitalization. Harmony Health’s IOP reduces isolation, maintains independence, and prevents hospital readmission.",
     },
     {
       title: "Interdisciplinary Team",
-      href: "/treatment-programs/interdisciplinary-team",
+      href: "/treatment-programs/interdisciplinary-team/",
       description:
         "Team includes psychiatrists, nurse practitioners, physicians, nurses, social workers, psychologists, dietitians, activity therapists, clinical pharmacists, discharge planners, and mental health technicians.",
     },
@@ -24,9 +24,9 @@ export default function TreatmentPrograms() {
     <>
       <section className="bg-white py-16 px-6 md:px-12">
         <div className="max-w-7xl mx-auto text-center">
-          <h2 className="text-3xl md:text-4xl font-bold text-primary-foreground mb-4">
+          <h1 className="text-3xl md:text-4xl font-bold text-primary-foreground mb-4">
             Treatment & Services
-          </h2>
+          </h1>
 
           {/* ✅ Added Plan of Care Overview Section */}
           <div className="text-left max-w-4xl mx-auto mb-16 space-y-8 text-gray-700 leading-relaxed">

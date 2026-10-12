@@ -36,7 +36,7 @@ function ReferralHero() {
     <section role="banner" className="relative">
       <div className="relative h-[50vh] md:h-[60vh] overflow-hidden">
         <img
-          src="/images/referral_process.jpg"
+          src="/images/referral_process.webp"
           alt="Clipboard and stethoscope symbolizing referrals"
           className="absolute inset-0 h-full w-full object-cover object-center"
           loading="eager"

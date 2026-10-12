@@ -2,9 +2,9 @@ export default function FAQsPage() {
   return (
     <section className="bg-white py-16 px-6 md:px-12">
       <div className="max-w-5xl mx-auto">
-        <h2 className="text-3xl md:text-4xl font-bold text-primary-foreground mb-8 text-center">
+        <h1 className="text-3xl md:text-4xl font-bold text-primary-foreground mb-8 text-center">
           Frequently Asked Questions
-        </h2>
+        </h1>
 
         <div className="space-y-12">
           {/* Inpatient Hospitalization FAQs */}

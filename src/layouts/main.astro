@@ -1,9 +1,77 @@
 ---
 import MainLayout from "../components/layout/MainLayout";
+import { DEFAULT_META, PAGE_META } from "../lib/seo";
 import '../styles/global.css';
 
 const { pathname } = Astro.url;
 const isIndexPage = pathname === "/";
+
+const routeKey = pathname.replace(/\/(index\.html)?$/, "");
+const { title, description } = PAGE_META[routeKey] ?? DEFAULT_META;
+// Live URLs end with a trailing slash; canonicals must match.
+const canonical = new URL(`${routeKey}/`, Astro.site).href;
+const ogImage = new URL("/images/our-focus.png", Astro.site).href;
+
+// Must match the visible footer/contact details. No ratings or reviews.
+const orgId = "https://harmonyfortworth.com/#organization";
+const jsonLd = {
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": ["Hospital", "MedicalOrganization"],
+      "@id": orgId,
+      name: "Harmony Health",
+      url: "https://harmonyfortworth.com/",
+      logo: "https://harmonyfortworth.com/images/harmony-health-logo.png",
+      image: ogImage,
+      telephone: "+1-817-529-3170",
+      faxNumber: "+1-817-529-3171",
+      address: {
+        "@type": "PostalAddress",
+        streetAddress: "7001 Bryant Irvin Rd",
+        addressLocality: "Fort Worth",
+        addressRegion: "TX",
+        postalCode: "76132",
+        addressCountry: "US",
+      },
+      contactPoint: [
+        {
+          "@type": "ContactPoint",
+          telephone: "+1-844-570-7444",
+          contactType: "24/7 Intake Assessment Hotline",
+          areaServed: "US",
+          availableLanguage: "English",
+        },
+        {
+          "@type": "ContactPoint",
+          telephone: "+1-844-570-6444",
+          contactType: "Main Toll Free",
+          areaServed: "US",
+        },
+      ],
+      sameAs: [
+        "https://www.instagram.com/harmonyhealthfw",
+        "https://www.facebook.com/share/1CXjCUa5Br/",
+        "https://www.linkedin.com/company/harmonyfortworth/",
+      ],
+    },
+    {
+      "@type": "WebPage",
+      "@id": `${canonical}#webpage`,
+      url: canonical,
+      name: title,
+      description,
+      about: { "@id": orgId },
+      isPartOf: {
+        "@type": "WebSite",
+        "@id": "https://harmonyfortworth.com/#website",
+        url: "https://harmonyfortworth.com/",
+        name: "Harmony Health",
+        publisher: { "@id": orgId },
+      },
+    },
+  ],
+};
 ---
 
 <html lang="en">
@@ -18,34 +86,48 @@ const isIndexPage = pathname === "/";
       function gtag(){dataLayer.push(arguments);}
       gtag('js', new Date());
 
-      gtag('config', 'G-5Z6NL2RG62');
+      // Skip localhost, netlify dev and deploy previews so reports stay clean.
+      if (location.hostname === 'harmonyfortworth.com' || location.hostname === 'www.harmonyfortworth.com') {
+        gtag('config', 'G-5Z6NL2RG62');
+
+        // Phone number only; never send form contents or program interest.
+        document.addEventListener('click', function (e) {
+          var link = e.target.closest && e.target.closest('a[href^="tel:"]');
+          if (link) gtag('event', 'phone_call_click', { link_url: link.getAttribute('href') });
+        });
+      }
     </script>
 
     <!-- Title & Description -->
-    <title>Harmony Health |  Compassionate Psychiatric Care for Seniors</title>
-    <meta name="description" content="Helping older adults and their families find safety, healing, and hope in Harmony." />
+    <title>{title}</title>
+    <meta name="description" content={description} />
+    <link rel="canonical" href={canonical} />
+    <script type="application/ld+json" set:html={JSON.stringify(jsonLd)} />
 
     <!-- Favicon -->
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 
     <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&display=swap" rel="stylesheet">
 
     <!-- Open Graph for Social Sharing -->
-    <meta property="og:title" content="Rivers Residence" />
-    <meta property="og:description" content="Helping older adults and their families find safety, healing, and hope in Harmony." />
-    <meta property="og:image" content="/image/rivers-residence-meta.jpeg" />
-    <meta property="og:url" content="https://harmonyfortworth.com" />
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={description} />
+    <meta property="og:image" content={ogImage} />
+    <meta property="og:url" content={canonical} />
     <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Harmony Health" />
 
     <!-- Twitter Card -->
     <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="Harmony Health" />
-    <meta name="twitter:description" content="Helping older adults and their families find safety, healing, and hope in Harmony." />
-    <meta name="twitter:image" content="/images/our-focus.png" />
+    <meta name="twitter:title" content={title} />
+    <meta name="twitter:description" content={description} />
+    <meta name="twitter:image" content={ogImage} />
 
     <!-- Author and Generator -->
-    <meta name="author" content="Harmony Health />
+    <meta name="author" content="Harmony Health" />
     <meta name="generator" content="Astro" />
   </head>
 

@@ -1,0 +1,40 @@
+{
+  "$schema": "https://json.schemastore.org/claude-code-settings.json",
+  "permissions": {
+    "allow": [
+      "Bash(pnpm build:*)",
+      "Bash(pnpm dev:*)",
+      "Bash(pnpm preview:*)",
+      "Bash(pnpm astro:*)",
+      "Bash(git status:*)",
+      "Bash(git diff:*)",
+      "Bash(git log:*)",
+      "Bash(git branch:*)",
+      "Bash(git show:*)"
+    ],
+    "deny": [
+      "Read(./.env)",
+      "Read(./**/.env)",
+      "Read(./**/.env.production)",
+      "Read(./**/.env.local)",
+      "Read(./**/*.pem)",
+      "Read(./**/*.key)",
+      "Read(./**/secret*.json)",
+      "Read(./**/*credentials*.json)",
+      "Read(./.netlify/**)"
+    ]
+  },
+  "hooks": {
+    "PreToolUse": [
+      {
+        "matcher": "Bash|PowerShell",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "bash \"$CLAUDE_PROJECT_DIR/.claude/hooks/validate-bash.sh\""
+          }
+        ]
+      }
+    ]
+  }
+}

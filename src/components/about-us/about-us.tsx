@@ -14,6 +14,9 @@ const AboutUs = () => {
       {/* Content */}
       <main className="max-w-7xl mx-auto px-6 py-12 space-y-12">
         {/* Title */}
+        <h1 className="text-3xl md:text-4xl font-bold text-primary-foreground">
+          About Harmony Health
+        </h1>
 
         {/* Mission & Values */}
         <section aria-labelledby="mission">
@@ -42,23 +45,7 @@ const AboutUs = () => {
           </p>
 
           {/* Media placeholders */}
-          <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
-            <div className="aspect-video rounded-lg border-2 border-dashed border-gray-300 bg-gray-50 flex items-center justify-center">
-              <span className="text-sm text-gray-500">
-                Facility Photo Placeholder
-              </span>
-            </div>
-            <div className="aspect-video rounded-lg border-2 border-dashed border-gray-300 bg-gray-50 flex items-center justify-center">
-              <span className="text-sm text-gray-500">
-                Facility Photo Placeholder
-              </span>
-            </div>
-            <div className="aspect-video rounded-lg border-2 border-dashed border-gray-300 bg-gray-50 flex items-center justify-center">
-              <span className="text-sm text-gray-500">
-                Facility Video Placeholder
-              </span>
-            </div>
-          </div>
+
           <p className="text-sm text-gray-500">
             (Photos and videos of our facility coming soon.)
           </p>

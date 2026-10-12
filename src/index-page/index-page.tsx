@@ -29,7 +29,8 @@ function HeroSection() {
       {/* Background image wrapper */}
       <div className="absolute inset-0 z-0">
         <img
-          src="/banner/banner.png"
+          src="/banner/banner.webp"
+          fetchPriority="high"
           alt="Hero background"
           className="w-full h-full object-cover"
         />
@@ -58,14 +59,14 @@ function HeroSection() {
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <a
-              href="/book"
+              href="/book/"
               className="bg-primary hover:opacity-90 px-8 py-4 rounded-lg text-white font-semibold transition-all duration-200 group"
             >
               Request an Appointment
               <ChevronRight className="inline ml-2 w-4 h-4 group-hover:translate-x-1 transition-transform" />
             </a>
             <a
-              href="/treatment-programs"
+              href="/treatment-programs/"
               className="border-2 border-gray-300 hover:border-primary hover:text-primary px-8 py-4 rounded-lg text-white font-semibold transition-all duration-200 group"
             >
               Learn About Our Programs
@@ -84,21 +85,25 @@ function ProgramsPreview() {
     {
       image: "/images/inpatient-care.jpg",
       title: "Inpatient Care",
+      href: "/treatment-programs/inpatient-program/",
       desc: "Crisis stabilization and comprehensive psychiatric care with 24-hour medical support for seniors in acute need.",
     },
     {
       image: "/images/outpatient-care.jpg",
       title: "Outpatient Programs",
+      href: "/treatment-programs/outpatient-program/",
       desc: "Structured Intensive Outpatient therapy and psychiatric monitoring during the day while maintaining independence at home.",
     },
     {
       image: "/images/family-support.jpg",
       title: "Family Support",
+      href: "/patient-visitor-guide/",
       desc: "Comprehensive family education, caregiver support, and collaborative discharge planning for optimal outcomes.",
     },
     {
       image: "/images/continuum-of-care.jpg",
       title: "Continuum of Care",
+      href: "/referrals/",
       desc: "Seamless step-down programs and community coordination to ensure long-term stability and recovery.",
     },
   ];
@@ -117,7 +122,7 @@ function ProgramsPreview() {
         </div>
 
         <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-4">
-          {services.map(({ image, title, desc }) => (
+          {services.map(({ image, title, href, desc }) => (
             <div
               key={title}
               className="group hover:shadow-xl transition-all duration-300 bg-white border border-gray-100 rounded-2xl p-8 hover:border-primary/30"
@@ -125,11 +130,16 @@ function ProgramsPreview() {
               <div className="bg-primary/10 w-full h-40 rounded-xl flex items-center justify-center mb-6 group-hover:bg-primary/20 transition-colors">
                 <img
                   src={image}
+                  loading="lazy"
                   alt={title}
                   className="w-full h-full object-cover"
                 />
               </div>
-              <h3 className="font-bold text-xl mb-4 text-gray-900">{title}</h3>
+              <h3 className="font-bold text-xl mb-4 text-gray-900">
+                <a href={href} className="hover:text-primary hover:underline">
+                  {title}
+                </a>
+              </h3>
               <p className="text-gray-600 leading-relaxed">{desc}</p>
             </div>
           ))}
@@ -137,7 +147,7 @@ function ProgramsPreview() {
 
         <div className="text-center mt-16">
           <a
-            href="/treatment-programs"
+            href="/treatment-programs/"
             className="bg-primary hover:bg-primary/90 px-8 py-4 rounded-lg font-semibold transition-all duration-200 shadow-lg hover:shadow-xl"
           >
             Explore Our Services
@@ -165,7 +175,7 @@ function AboutCareSection() {
               recover, and return to the highest quality of life possible.
             </p>
             <a
-              href="/about-us"
+              href="/about-us/"
               className="bg-primary hover:bg-primary/90 px-8 py-4 rounded-lg font-semibold transition-all duration-200 shadow-lg hover:shadow-xl group"
             >
               Meet Our Care Team
@@ -175,7 +185,10 @@ function AboutCareSection() {
           <div className="relative">
             <div className="absolute inset-0 bg-gradient-to-br from-gray-100 to-gray-50 rounded-3xl transform rotate-3"></div>
             <img
-              src="/images/healthcare-team.png"
+              src="/images/healthcare-team.webp"
+              width={1200}
+              height={1200}
+              loading="lazy"
               alt="Healthcare team providing compassionate care to seniors"
               className="relative rounded-3xl shadow-2xl w-full h-auto"
             />
@@ -232,12 +245,18 @@ function AccreditationStrip() {
     <section className="py-12 px-6 md:px-12 bg-gray-50 border-y border-gray-100">
       <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-center gap-12">
         <img
-          src="/joint-commission.jpg"
+          src="/joint-commission.webp"
+          width={800}
+          height={1223}
+          loading="lazy"
           alt="The Joint Commission National Quality Approval"
           className="w-full md:w-1/2 h-auto object-contain"
         />
         <img
-          src="/joint-commission-2.jpg"
+          src="/joint-commission-2.webp"
+          width={800}
+          height={1223}
+          loading="lazy"
           alt="The Joint Commission National Quality Approval"
           className="w-full md:w-1/2 h-auto object-contain"
         />
@@ -261,7 +280,7 @@ function ProviderStrip() {
         </p>
         <div className="flex justify-center gap-4">
           <a
-            href="/referrals"
+            href="/referrals/"
             className="bg-white px-8 py-4 rounded-lg font-semibold transition-all duration-200 shadow-lg hover:shadow-xl"
           >
             Refer a Patient

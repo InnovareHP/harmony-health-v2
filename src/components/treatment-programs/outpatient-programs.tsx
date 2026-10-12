@@ -1,6 +1,9 @@
 const OutpatientPrograms = () => {
   return (
     <div className="bg-background-secondary/20 p-6 rounded-lg shadow-sm">
+      <h1 className="text-2xl md:text-3xl font-bold text-primary-foreground mb-4">
+        Outpatient Programs
+      </h1>
       <p className="text-gray-800 mb-4">
         Outpatient programs for adults at Harmony Health are designed for
         individuals who may benefit from treatment in a less restrictive

@@ -4,7 +4,7 @@ const OurFocus = () => {
       {/* Banner */}
       <div className="w-full h-64 md:h-72 lg:h-80 overflow-hidden">
         <img
-          src="/images/our-focus.png"
+          src="/images/our-focus.webp"
           alt="Healthcare professional talking with a patient"
           className="w-full h-full object-cover"
         />

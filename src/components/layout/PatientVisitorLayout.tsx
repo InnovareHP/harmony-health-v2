@@ -6,19 +6,19 @@ export default function StayInfoSection({ children }: Props) {
   const items = [
     {
       title: "Preparing for Your Stay",
-      href: "/patient-visitor-guide/preparing-your-stay",
+      href: "/patient-visitor-guide/preparing-your-stay/",
     },
     {
       title: "During Your Stay",
-      href: "/patient-visitor-guide/during-your-stay",
+      href: "/patient-visitor-guide/during-your-stay/",
     },
     {
       title: "Visitation",
-      href: "/patient-visitor-guide/visitation",
+      href: "/patient-visitor-guide/visitation/",
     },
     {
       title: "Discharge & Follow-up",
-      href: "/patient-visitor-guide/discharge-follow-up",
+      href: "/patient-visitor-guide/discharge-follow-up/",
     },
   ];
 

@@ -9,15 +9,15 @@ import {
 } from "lucide-react";
 
 const resources = [
-  { label: "HIPAA Privacy Practices", href: "/compliance" },
-  { label: "Price Transparency", href: "/price-transparency" },
-  { label: "Terms of Use", href: "/compliance" },
-  { label: "Brochure", href: "/brochure" },
+  { label: "HIPAA Privacy Practices", href: "/compliance/" },
+  { label: "Price Transparency", href: "/price-transparency/" },
+  { label: "Terms of Use", href: "/compliance/" },
+  { label: "Brochure", href: "/brochure/" },
 ];
 
 const policies = [
-  { label: "Medical Disclaimer", href: "/compliance" },
-  { label: "Notice of Nondiscrimination", href: "/compliance" },
+  { label: "Medical Disclaimer", href: "/compliance/" },
+  { label: "Notice of Nondiscrimination", href: "/compliance/" },
 ];
 
 export default function Footer() {

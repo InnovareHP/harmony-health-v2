@@ -50,7 +50,7 @@ const ContactUs = () => {
                 <dd>
                   <strong>Main Local:</strong>{" "}
                   <a
-                    href={`tel:${org.mainLocal}`}
+                    href={`tel:${org.mainLocal.replace(/\s/g, "")}`}
                     className="text-blue-700 hover:underline"
                   >
                     {org.mainLocal}
@@ -62,7 +62,7 @@ const ContactUs = () => {
                 <dd>
                   <strong>Main Toll Free:</strong>{" "}
                   <a
-                    href={`tel:${org.mainTollFree}`}
+                    href={`tel:${org.mainTollFree.replace(/\s/g, "")}`}
                     className="text-blue-700 hover:underline"
                   >
                     {org.mainTollFree}
@@ -74,7 +74,7 @@ const ContactUs = () => {
                 <dd>
                   <strong>Hotline:</strong>{" "}
                   <a
-                    href={`tel:${org.phoneHuman}`}
+                    href={`tel:${org.phoneHuman.replace(/\s/g, "")}`}
                     className="text-blue-700 hover:underline"
                   >
                     {org.phoneHuman}
@@ -111,7 +111,7 @@ const ContactUs = () => {
               one business day.
             </p>
             <a
-              href="/book"
+              href="/book/"
               className="inline-flex items-center justify-center rounded-xl bg-primary px-6 py-3 text-lg font-semibold text-white hover:opacity-90"
             >
               Request an Appointment

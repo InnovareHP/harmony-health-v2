@@ -80,7 +80,7 @@ const ComplianceLegalPolicies = () => {
               services on the dedicated Price Transparency page.
             </p>
             <a
-              href="/price-transparency"
+              href="/price-transparency/"
               className="inline-block text-primary hover:underline font-medium"
             >
               Visit the Price Transparency page ›
@@ -348,7 +348,7 @@ const ComplianceLegalPolicies = () => {
               <br />
               <strong>Harmony Health Administrator</strong>
               <br />
-              7001 Bryant Irvin Rd, Fort Worth, TX 76152
+              7001 Bryant Irvin Rd, Fort Worth, TX 76132
             </p>
           </section>
         </article>
