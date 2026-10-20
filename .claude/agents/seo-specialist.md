@@ -45,7 +45,7 @@ Base findings on what the data shows:
 - whether key events (`phone_call_click`, `file_download`, `/book` submits)
   are firing.
 
-The baseline from 2026-10-08 is on the vault page `harmony-health-v2.md`.
+The baseline (v2, 2026-10-15; SEO deploy 2026-10-12) is on the vault page `harmony-health-v2.md`.
 
 ## Start every audit by reading
 

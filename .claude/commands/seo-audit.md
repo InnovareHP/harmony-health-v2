@@ -17,5 +17,5 @@ The scope is `$ARGUMENTS` if given, otherwise every public route.
    Pass the relevant numbers to the agent.
 3. The agent is advisory: no edits unless the user asks.
 4. Relay its score snapshot, ranked findings, needs-data list and 30/60/90
-   plan. Compare with the 2026-10-08 baseline on the vault page
+   plan. Compare with the 2026-10-15 baseline (v2) on the vault page
    `wiki/entities/harmony-health-v2.md`.
