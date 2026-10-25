@@ -5,7 +5,7 @@ const InpatientPrograms = () => {
         Inpatient Program
       </h1>
       <p className="text-gray-800 mb-4">
-        At Harmony Health, adults ages 55 years and older can receive inpatient
+        At Harmony Health, adults ages 45 years and older can receive inpatient
         treatment through one of our specialized therapeutic programs. For
         patients experiencing critical behavioral health symptoms, our treatment
         provides crisis stabilization with 24-hour nursing care — all within a
