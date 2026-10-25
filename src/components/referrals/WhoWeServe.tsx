@@ -12,7 +12,7 @@ export default function WhoWeServe() {
         <div>
           <h2 className="text-2xl font-bold mb-3">Who We Serve</h2>
           <p className="text-gray-700 mb-4">
-            We specialize in psychiatric care for adults <strong>55+</strong>{" "}
+            We specialize in psychiatric care for adults <strong>45+</strong>{" "}
             experiencing:
           </p>
           <ul className="list-disc list-inside space-y-2 text-gray-700">
