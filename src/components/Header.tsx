@@ -1,5 +1,5 @@
 "use client";
-import { Menu, X } from "lucide-react"; // or use any icon library
+import { Menu, Phone, X } from "lucide-react"; // or use any icon library
 import { useState } from "react";
 
 export default function Header() {
@@ -18,15 +18,27 @@ export default function Header() {
           />
         </a>
 
-        {/* Burger Icon */}
-        <button
-          onClick={toggleMenu}
-          aria-label={isOpen ? "Close menu" : "Open menu"}
-          aria-expanded={isOpen}
-          className="xl:hidden text-gray-700 focus:outline-none"
-        >
-          {isOpen ? <X size={28} /> : <Menu size={28} />}
-        </button>
+        <div className="flex items-center gap-3 xl:hidden">
+          {/* Keep calling one tap away on mobile; nav hides it in the menu */}
+          <a
+            href="tel:+18175293170"
+            aria-label="Call Harmony Health at 817 529 3170"
+            className="flex items-center gap-1 rounded-full bg-primary px-3 py-2 text-sm font-semibold text-white hover:opacity-90"
+          >
+            <Phone size={18} />
+            Call
+          </a>
+
+          {/* Burger Icon */}
+          <button
+            onClick={toggleMenu}
+            aria-label={isOpen ? "Close menu" : "Open menu"}
+            aria-expanded={isOpen}
+            className="text-gray-700 focus:outline-none"
+          >
+            {isOpen ? <X size={28} /> : <Menu size={28} />}
+          </button>
+        </div>
 
         {/* Desktop Navigation */}
         <nav className="hidden xl:flex flex-wrap justify-end gap-x-4 gap-y-1 text-xs font-medium text-gray-700 max-w-3xl">

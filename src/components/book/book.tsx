@@ -187,6 +187,11 @@ const BookAppointment = () => {
       setForm(emptyForm);
       setFieldErrors({});
       setStatus("sent");
+      // Event name only; never send form contents (health info) to GA.
+      (window as { gtag?: (...args: unknown[]) => void }).gtag?.(
+        "event",
+        "generate_lead"
+      );
     } catch {
       setErrorMessage(
         "We couldn't reach the server. Please check your connection or call us."
