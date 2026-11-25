@@ -4,7 +4,7 @@
 export const DEFAULT_META = {
   title: "Senior Psychiatric Care in Fort Worth, TX | Harmony Health",
   description:
-    "Harmony Health is a psychiatric hospital in Fort Worth, TX caring for adults 55+, with inpatient and outpatient programs and a no-cost, confidential assessment.",
+    "Harmony Health is a psychiatric hospital in Fort Worth, TX caring for adults 45+, with inpatient and outpatient programs and a no-cost, confidential assessment.",
 };
 
 export const PAGE_META: Record<string, { title: string; description: string }> =
@@ -13,27 +13,27 @@ export const PAGE_META: Record<string, { title: string; description: string }> =
     "/about-us": {
       title: "About Harmony Health | Senior Psychiatric Care, Fort Worth",
       description:
-        "Learn about Harmony Health, a Fort Worth, TX psychiatric hospital helping adults 55+ and their families find safety, healing, and hope.",
+        "Learn about Harmony Health, a Fort Worth, TX psychiatric hospital helping adults 45+ and their families find safety, healing, and hope.",
     },
     "/our-focus": {
       title: "Our Focus: Older-Adult Mental Health | Harmony Health",
       description:
-        "Harmony Health focuses on psychiatric care for older adults in Fort Worth, TX, supporting patients 55+ and their families through every step of treatment.",
+        "Harmony Health focuses on psychiatric care for older adults in Fort Worth, TX, supporting patients 45+ and their families through every step of treatment.",
     },
     "/treatment-programs": {
       title: "Senior Treatment Programs | Harmony Health Fort Worth",
       description:
-        "Explore inpatient and outpatient psychiatric programs for adults 55+ at Harmony Health in Fort Worth, TX, delivered by an interdisciplinary care team.",
+        "Explore inpatient and outpatient psychiatric programs for adults 45+ at Harmony Health in Fort Worth, TX, delivered by an interdisciplinary care team.",
     },
     "/treatment-programs/inpatient-program": {
       title: "Senior Inpatient Psychiatric Care in Fort Worth, TX",
       description:
-        "Inpatient psychiatric care for adults 55+ at Harmony Health in Fort Worth, TX. Start with a no-cost, confidential assessment to find the right level of care.",
+        "Inpatient psychiatric care for adults 45+ at Harmony Health in Fort Worth, TX. Start with a no-cost, confidential assessment to find the right level of care.",
     },
     "/treatment-programs/outpatient-program": {
       title: "Senior Outpatient Programs (PHP & IOP) | Fort Worth, TX",
       description:
-        "Partial hospitalization (PHP) and intensive outpatient (IOP) programs for adults 55+ at Harmony Health in Fort Worth, TX, including a virtual IOP option.",
+        "Partial hospitalization (PHP) and intensive outpatient (IOP) programs for adults 45+ at Harmony Health in Fort Worth, TX, including a virtual IOP option.",
     },
     "/treatment-programs/interdisciplinary-team": {
       title: "Our Interdisciplinary Care Team | Harmony Health",
@@ -43,7 +43,7 @@ export const PAGE_META: Record<string, { title: string; description: string }> =
     "/referrals": {
       title: "Make a Referral | Senior Psychiatric Care, Fort Worth",
       description:
-        "Refer a patient 55+ to Harmony Health in Fort Worth, TX. See our referral process, who we serve, and how to reach our 24/7 intake team.",
+        "Refer a patient 45+ to Harmony Health in Fort Worth, TX. See our referral process, who we serve, and how to reach our 24/7 intake team.",
     },
     "/patient-visitor-guide": {
       title: "Patient & Visitor Guide | Harmony Health Fort Worth",
@@ -58,7 +58,7 @@ export const PAGE_META: Record<string, { title: string; description: string }> =
     "/patient-visitor-guide/during-your-stay": {
       title: "During Your Stay | Harmony Health Fort Worth",
       description:
-        "What daily life and treatment look like during a stay at Harmony Health, a psychiatric hospital for adults 55+ in Fort Worth, TX.",
+        "What daily life and treatment look like during a stay at Harmony Health, a psychiatric hospital for adults 45+ in Fort Worth, TX.",
     },
     "/patient-visitor-guide/visitation": {
       title: "Visitation Guidelines | Harmony Health Fort Worth",
@@ -68,7 +68,7 @@ export const PAGE_META: Record<string, { title: string; description: string }> =
     "/patient-visitor-guide/discharge-follow-up": {
       title: "Discharge & Follow-Up Care | Harmony Health Fort Worth",
       description:
-        "How discharge planning and post-discharge follow-up work at Harmony Health in Fort Worth, TX, so patients 55+ keep their progress after leaving.",
+        "How discharge planning and post-discharge follow-up work at Harmony Health in Fort Worth, TX, so patients 45+ keep their progress after leaving.",
     },
     "/patient-visitor-guide/faqs": {
       title: "Frequently Asked Questions | Harmony Health Fort Worth",
@@ -88,7 +88,7 @@ export const PAGE_META: Record<string, { title: string; description: string }> =
     "/book": {
       title: "Request an Appointment | Harmony Health Fort Worth",
       description:
-        "Request an appointment or a no-cost, confidential assessment at Harmony Health, a psychiatric hospital for adults 55+ in Fort Worth, TX.",
+        "Request an appointment or a no-cost, confidential assessment at Harmony Health, a psychiatric hospital for adults 45+ in Fort Worth, TX.",
     },
     "/brochure": {
       title: "Brochure | Harmony Health Fort Worth",

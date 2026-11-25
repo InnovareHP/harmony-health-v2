@@ -4,7 +4,7 @@ export default function TreatmentPrograms() {
       title: "Inpatient Program",
       href: "/treatment-programs/inpatient-program/",
       description:
-        "Provides 24/7 psychiatric and medical support for adults aged 55 years and older requiring stabilization. Focused on safety, dignity, and individualized care.",
+        "Provides 24/7 psychiatric and medical support for adults aged 45 years and older requiring stabilization. Focused on safety, dignity, and individualized care.",
     },
     {
       title: "Intensive Outpatient Program",

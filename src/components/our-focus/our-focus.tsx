@@ -40,7 +40,7 @@ const OurFocus = () => {
             Who We Serve
           </h2>
           <p className="text-gray-800 mb-4">
-            We specialize in psychiatric care for adults 55+ originating from
+            We specialize in psychiatric care for adults 45+ originating from
             hospitals, long-term care facilities, assisted living facilities,
             skilled nursing facilities, emergency room departments, physicians,
             and home and community organizations.
@@ -92,7 +92,7 @@ function WhoWeServe() {
             Who We Serve
           </h2>
           <p className="text-gray-700 mb-4">
-            We specialize in psychiatric care for adults <strong>55+</strong>{" "}
+            We specialize in psychiatric care for adults <strong>45+</strong>{" "}
             experiencing:
           </p>
           <ul className="list-disc list-inside space-y-2 text-gray-700">

@@ -16,7 +16,7 @@ const OutpatientPrograms = () => {
         <span className="font-semibold">
           Adult Partial Hospitalization Program (PHP)
         </span>
-        at Harmony Health serves patients ages 55 years and older who need a
+        at Harmony Health serves patients ages 45 years and older who need a
         structured therapeutic program but do not require 24-hour continuous
         care.
       </p>
@@ -26,7 +26,7 @@ const OutpatientPrograms = () => {
         <span className="font-semibold">
           Adult Psychiatric Intensive Outpatient Program (IOP)
         </span>
-        is for adults ages 55 years and older who require intensive psychiatric
+        is for adults ages 45 years and older who require intensive psychiatric
         treatment while maintaining the ability to return home between sessions.
         A <span className="italic">Virtual IOP</span> option is also available
         for those who prefer or require remote participation.
@@ -37,7 +37,7 @@ const OutpatientPrograms = () => {
         <span className="font-semibold">
           Adult Chemical Dependency Outpatient Program
         </span>
-        is designed for patients ages 55 years and older who are struggling with
+        is designed for patients ages 45 years and older who are struggling with
         chemical dependency or substance abuse issues, but who do not require
         medical detoxification or inpatient rehabilitation.
       </p>
